@@ -46,7 +46,24 @@
 }
 
 }
-
+@media (min-width:517px) {
+    .logo-sada{
+        width: 15%;
+        transform: translateX(217px);
+    }
+    .title-hero{
+        font-size: 1.6rem;
+    }
+    .paragraph-necesitas{
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    .paragraph-curso-online{
+        font-weight: 500;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: center;
+    }
+}
 
     /*  {
         text-align: center;
