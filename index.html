@@ -15,51 +15,61 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#">
-          <img class="logo-sada" src="./img/Recurso-logo-sada.svg" alt="logo-sada">
+  <main>
+    <!-- ****************** BLOCK- HEADER ********************** -->
+    <header class="header">
+      <div class="container-fluid bg-danger text-center">
+        <a href="#">
+          <img id="logo-sada" src="./img/Recurso-logo-sada.svg" alt="logo-sada">
         </a>
       </div>
-    </nav>
-  </header>
-  <main>
-    <div class="container-fluid">
       <div class="container">
-        <div class="row">
-          <!-- ****************** BLOCK-ONE ********************** -->
-          <!-- .................... COLUMNA 1 BLOCK- ONE .................... -->
-          <div class="hero-text bg-warning col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <h1 class="title-hero">Domina las Finanzas<br>de tu
-              Emprendimiento
-            </h1>
-            <p class="paragraph-necesitas fw-semibold">
-              ¿Necesitas ayuda para crear un presupuesto efectivo y controlar tus gastos para maximizar
-              tus ingresos?
-            </p>
+        <div class="row ">
+          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto ">
+            <div class="text-container p-2 mb-5">
+              <h1 class="title-hero display-4 text-capitalize">Domina las Finanzas de tu
+                Emprendimiento
+              </h1>
+              <p class="paragraph-necesitas lh-sm">
+                ¿Necesitas ayuda para crear un presupuesto efectivo y controlar tus gastos para maximizar
+                tus ingresos?
+              </p>
+              <p class="paragraph-curso-online fw-lighter h5 py-2">curso online de
+                finanzas para emprendedores</p>
 
-            <p class="paragraph-curso-online fw-lighter">curso online de finanzas para emprendedores</p>
+              <p class="paragraph-inscribete py-2 h5">¡Inscríbete hoy y da el
+                primer paso <br> hacia el éxito
+                financiero!
+              </p>
+              <div class="wrapper-cta py-3">
+                <a class="cta-1 py-2 btn btn-primary text-uppercase w-50" href="#box-form">Quiero Inscribirme</a>
+              </div>
 
-            <p class="paragraph-inscribete h6 text-center">¡Inscríbete hoy y da el primer paso <br> hacia el éxito
-              financiero!
-            </p>
-            <div class="wrapper-cta">
-              <a class="cta-1 btn" href="#box-form">Quiero Inscribirme</a>
             </div>
           </div>
-          <!-- .................... COLUMNA 2 BLOCK- ONE .................... -->
-          <div
-            class="hero-column text-center bg-danger d-flex align-items-center col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <img class="hero-img img-fluid" src="./img/illustration1.svg" alt="">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto bg-danger">
+            <div class="image-container">
+              <img src="./img/illustration1.svg" alt="" class="img-illustration-1 img-fluid">
+            </div>
           </div>
+        </div>
+      </div>
+    </header>
 
-          <!-- ****************** BLOCK-TWO ********************** -->
-          <!-- .................... COLUMNA 1 BLOCK- TWO .................... -->
-          
-          <div class="box-list bg-primary col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 order-1 ">
-            <h2 class="title-aprenderas">Qué aprenderás?</h2>
-            <ul>
+    <!-- ****************** BLOCK-ONE ********************** -->
+    <section class="block-one">
+      <div class="container">
+        <div class="row ">
+          <!-- .................... inicio columna 1 block-one  .................... -->
+          <div class="wrapper-img-illustration-2 bg-danger align-self-center col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
+            <img src="./img/illustration2.svg" alt="illustration2" class="img-illustration-2 img-fluid">
+          </div>
+          <!-- .................... fin columna 1 block-one  .................... -->
+
+          <!-- .................... inicio columna 2 block-one  .................... -->
+          <div class="text-content-box col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto align-self-center py-3 git">
+            <h2 class="title-aprenderas h4 text-center">Qué aprenderás?</h2>
+            <ul class="list-box lh-lg h5 mx-5">
               <li class="list-block-two">Principios básicos de contabilidad y finanzas.</li>
               <li class="list-block-two">Cómo crear y gestionar un presupuesto efectivo.</li>
               <li class="list-block-two">Estrategias para aumentar la rentabilidad y reducir costos.</li>
@@ -72,16 +82,488 @@
               </li>
             </ul>
           </div>
-          <!-- .................... COLUMNA 2 BLOCK- TWO .................... -->
-          <div
-            class="wrapper-img-illustration-2  bg-danger d-flex align-items-center col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ">
+          <!-- .................... fin columna 2 block-one  .................... -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************** BLOCK- TWO ********************** -->
+    <section class="block-two ">
+      <div class="container">
+        <div class="row">
+          <!-- .................... inicio columna 1 block-two  .................... -->
+          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto py-2 bg-secondary">
+            <h3 class="title-faq h5 text-center">Preguntas Frecuentes</h3>
+
+            <!--🎇 incio grupo acordion -->
+            <div class="accordion" id="accordionExample">
+
+              <!-- .................... acordion-1 .................... -->
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    ¿Se requieren conocimientos previos en finanzas?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    No, el curso está diseñado para emprendedores de todos los
+                    niveles y no se requieren conocimientos previos en finanzas.
+                  </div>
+                </div>
+              </div>
+              <!-- .................... acordion-2 .................... -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿Recibiré algún tipo de certificación al finalizar el curso?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sí, al completar el curso recibirás un certificado de participación que
+                    respaldará tus conocimientos en finanzas para emprendedores.
+                  </div>
+                </div>
+              </div>
+              <!-- .................... acordion-3 .................... -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Cómo puedo acceder al curso?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Una vez te hayas inscrito, recibirás acceso a la plataforma en línea
+                    donde podrás acceder a todo el contenido del curso.
+                  </div>
+                </div>
+              </div>
+              <!-- .................... acordion-4 .................... -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    ¿Se ofrecen descuentos para grupos o empresas?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sí, contáctanos para obtener más información sobre descuentos para
+                    grupos o empresas.
+                  </div>
+                </div>
+              </div>
+              <!-- .................... acordion-5 .................... -->
+
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    ¿El curso se actualizará con el tiempo?
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    Sí, el curso se actualizará periódicamente para incluir las últimas
+                    tendencias y prácticas en finanzas para emprendedores.
+                  </div>
+                </div>
+              </div>
+
+            </div> <!--🎇 fin grupo acordion -->
+
+          </div>
+          <!-- .................... fin columna 1 block-two  .................... -->
+
+          <!-- .................... inicio columna 2 block-two  .................... -->
+          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto py-5 bg-primary">
+
+            <div class="container-card-caroline card text-center ">
+              <h3 class="title-card-caroline h5 py-3 text-center">Quién te acompañará?</h3>
+              <img src="./img/img-Caroline-Sada-unsplash-.jpg" class="caroline-image img-fluid mx-auto " alt="...">
+              <div class="content-text card-body bg-warning">
+                <h4 class="card-title">Card title</h4>
+                <p class="card-text">Experta en finanzas y emprendimientos, compartirá su experiencia para aplicarla
+                  directamente en tu negocio. Con un historial exitoso en la asesoría a emprendedores, te
+                  ayudará a transformar tus finanzas y alcanzar el éxito empresarial. <br>Únete y sé parte
+                  de esta transformación.</p>
+              </div>
+            </div>
+          </div>
+          <!-- .................... fin columna 2 block-two  .................... -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ****************** BLOCK-THREE ********************** -->
+    <section class="block-three">
+      <div class="container">
+        <div class="row">
+          <!-- .................... inicio columna 1 block-three  .................... -->
+          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto py-5 bg-danger">
+
+          </div>
+          <!-- .................... fin columna 1 block-three  .................... -->
+
+          <!-- .................... inicio columna 2 block-three  .................... -->
+          <div class="col-sm-12 col-md-6 mx-auto py-5 bg-secondary">
+            <!-- ..... sub columna ..... -->
+            <div class="row ">
+              <!-- columna-A -->
+              <div class="col-md-7   bg-warning">
+                jjjjjjj
+              </div>
+               <!-- columna-B -->
+              <div class="col-md-7  bg-primary">
+kkkkkkkk
+              </div>
+            </div>
+            <!-- ..... sub columna ..... -->
+          </div>
+          <!-- .................... fin columna 2 block-three  .................... -->
+        </div>
+      </div>
+    </section>
+    <!-- ññññññññññññññññññññññññññññññññññññññññññññ -->
+
+
+    <!-- <header class="header pt-6 vh-100">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="tex-container p-4 d-flex flex-column justify-content-center mb-5">
+            <h1 class="title-hero display-1 tex-capitalize">Domina las Finanzas<br>de tu
+              Emprendimiento
+            </h1>
+
+            <p class="paragraph-necesitas py-3 fw-semibold">
+              ¿Necesitas ayuda para crear un presupuesto efectivo y controlar tus gastos para maximizar
+              tus ingresos?
+            </p>
+
+            
+          <div class="wrapper-cta py-3">
+            <a class="cta-1 btn btn-primary text-uppercase w-20" href="#box-form">Quiero Inscribirme</a>
+          </div>
+        </div>
+        </div>
+
+        00000000000000000000000000000000000000 
+        <div class="col-md-6 ">
+          <div class="hero-column ">
+            <img class="hero-img img-fluid" src="./img/illustration1.svg" alt="">
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>-->
+    <!-- <nav class="navbar "> </nav> -->
+    <!-- <div class="container"> </div> -->
+    <!-- <a href="#">
+      <img id="logo-sada" src="./img/Recurso-logo-sada.svg" alt="logo-sada">
+    </a> 
+  </header>-->
+  </main>
+  <!-- <div class="container-fluid">
+      <div class="container">
+        <div class="row"> -->
+  <!-- ****************** BLOCK-ONE ********************** -->
+  <!-- .................... COLUMNA 1 BLOCK- ONE .................... -->
+
+  <!--  -->
+
+
+  <!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
+
+
+  <!-- <div class="hero-text bg-warning  col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+            <h1 class="title-hero text-md-start">Domina las Finanzas<br>de tu
+              Emprendimiento
+            </h1>
+            <p class="paragraph-necesitas fw-semibold text-sm-center text-md-center text-xl-start">
+              ¿Necesitas ayuda para crear un presupuesto efectivo y controlar tus gastos para maximizar
+              tus ingresos?
+            </p>
+
+            <p class="paragraph-curso-online fw-lighter text-sm-center text-md-center text-xl-start">curso online de
+              finanzas para emprendedores</p>
+
+            <p class="paragraph-inscribete h6 text-sm-center text-md-center text-xl-start">¡Inscríbete hoy y da el
+              primer paso <br> hacia el éxito
+              financiero!
+            </p>
+            <div class="wrapper-cta">
+              <a class="cta-1 btn" href="#box-form">Quiero Inscribirme</a>
+            </div>
+          </div> -->
+  <!-- .................... COLUMNA 2 BLOCK- ONE .................... -->
+  <!-- <div
+            class="hero-column text-center bg-danger d-flex align-items-center col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+            <img class="hero-img img-fluid" src="./img/illustration1.svg" alt="">
+          </div> -->
+
+  <!-- ****************** BLOCK-TWO ********************** -->
+  <!-- .................... COLUMNA 1 BLOCK- TWO .................... -->
+
+  <!-- <div class="box-list bg-primary col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 order-1 ">
+            <h2 class="title-aprenderas h4 text-center">Qué aprenderás?</h2>
+            <ul class="lh-lg">
+              <li class="list-block-two">Principios básicos de contabilidad y finanzas.</li>
+              <li class="list-block-two">Cómo crear y gestionar un presupuesto efectivo.</li>
+              <li class="list-block-two">Estrategias para aumentar la rentabilidad y reducir costos.</li>
+              <li class="list-block-two">Herramientas para analizar la viabilidad financiera de nuevos
+                proyectos.</li>
+              <li class="list-block-two">Técnicas para manejar el flujo de efectivo y la liquidez de tu
+                empresa.</li>
+              <li class="list-block-two">Consejos prácticos para mejorar la gestión financiera en tu
+                emprendimiento.
+              </li>
+            </ul>
+          </div> -->
+  <!-- .................... COLUMNA 2 BLOCK- TWO .................... -->
+  <!-- <div
+            class="wrapper-img-illustration-2 bg-danger d-flex align-items-center col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ">
             <img class="img-illustration-2 mx-auto img-fluid" src="./img/illustration2.svg" alt="">
           </div>
 
         </div>
       </div>
     </div>
-  </main>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="bg-warning col-sm-3">
+          Level 1: .col-sm-3
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae sequi dolores accusantium alias
+            ipsa laborum atque esse dolor ex laudantium quasi enim iure vero laboriosam voluptatibus, sint tenetur
+            labore.
+          </p>
+        </div>
+
+        <div class="col-sm-9">
+          <div class="row">
+            <div class="bg-primary col-sm-6">
+              Level 2: .col-8 .col-sm-
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repudiandae sequi dolores accusantium
+                alias ipsa laborum atque esse dolor ex laudantium quasi enim iure vero laboriosam voluptatibus, sint
+                tenetur labore.
+              </p>
+            </div>
+            <div class="bg-danger col-sm-6">
+              <ul class="lh-lg">
+                <li class="list-block-two">Principios básicos de contabilidad y finanzas.</li>
+                <li class="list-block-two">Cómo crear y gestionar un presupuesto efectivo.</li>
+                <li class="list-block-two">Estrategias para aumentar la rentabilidad y reducir costos.</li>
+                <li class="list-block-two">Herramientas para analizar la viabilidad financiera de nuevos
+                  proyectos.</li>
+                <li class="list-block-two">Técnicas para manejar el flujo de efectivo y la liquidez de tu
+                  empresa.</li>
+                <li class="list-block-two">Consejos prácticos para mejorar la gestión financiera en tu
+                  emprendimiento.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="bg-warning col">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex laboriosam autem. Aspernatur
+            accusantium quibusdam dicta voluptate vel harum nihil, sint perferendis suscipit nulla ipsa, eveniet, quae
+            voluptates quod assumenda?
+          </p>
+        </div>
+        <div class="bg-primary col">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus ex laboriosam autem. Aspernatur
+            accusantium quibusdam dicta voluptate vel harum nihil, sint perferendis suscipit nulla ipsa, eveniet, quae
+            voluptates quod assumenda?
+          </p>
+        </div>
+
+      </div>
+    </div> -->
+  <!-- 
+    <div class="container text-center">
+      <div class="row row-cols-1 row-cols-md-4">
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+        <div class="col">Column</div>
+      </div>
+    </div> -->
+
+  <!-- <div class="container text-center ">
+      <div class="row row-cols-2">
+        <div class="col bg-danger">
+          <div class="col bg-primary"><img class="foto" src="./img/illustration3.svg" alt=""></div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione aut ea voluptas nisi. Illum doloribus
+            explicabo eum vero commodi? Minus possimus ullam quasi iure! Nemo corrupti optio quas tenetur?</p>
+        </div>
+
+        <div class="col-6">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ratione aut ea voluptas nisi. Illum doloribus
+            explicabo eum vero commodi? Minus possimus ullam quasi iure! Nemo corrupti optio quas tenetur?</p>
+        </div>
+        <div class="col-7">Column</div>
+      </div>
+    </div>
+ -->
+
+
+  <!-- Features 
+<section class="features py-6">
+  <div class="container">-->
+  <!-- Feature 1
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/images/feature-1.jpg" alt="" class="img-fluid border border-primary border-6" />
+      </div>
+      <div class="col-md-6 small p-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, vero. Iusto amet expedita, saepe
+          voluptates ab beatae cupiditate eaque, accusantium numquam fugiat modi? Iusto necessitatibus accusantium
+          aspernatur reiciendis omnis commodi animi consequatur aliquam dignissimos. Quisquam mollitia repellat
+          ducimus, sit, aliquam non libero quae asperiores distinctio dolores accusamus culpa architecto earum!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus beatae reiciendis doloribus veniam
+          accusantium ea ducimus aliquam iure quo vitae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio recusandae cupiditate quo molestias error
+          nesciunt itaque sunt ipsa facere amet maiores laborum reprehenderit autem et veniam, nam asperiores eaque
+          consequatur tenetur. Quae, mollitia! Temporibus totam dolor quis hic distinctio expedita alias quaerat
+          obcaecati perferendis atque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quod voluptas nesciunt beatae molestias
+          reprehenderit veritatis, praesentium ab recusandae. Rerum quaerat iure facilis rem nihil est consequatur
+          tempore tempora iste possimus natus, a ad! Facilis et quidem quos. Eligendi corrupti eaque porro
+          repudiandae quis ab optio, tenetur sunt labore quibusdam a assumenda dignissimos dolore alias atque eum?
+          Nesciunt, voluptatem eum?
+        </p>
+      </div>
+    </div> -->
+  <!-- Feature 2
+    <div class="row py-5">
+      <div class="col-md-6 small p-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, vero. Iusto amet expedita, saepe
+          voluptates ab beatae cupiditate eaque, accusantium numquam fugiat modi? Iusto necessitatibus accusantium
+          aspernatur reiciendis omnis commodi animi consequatur aliquam dignissimos. Quisquam mollitia repellat
+          ducimus, sit, aliquam non libero quae asperiores distinctio dolores accusamus culpa architecto earum!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus beatae reiciendis doloribus veniam
+          accusantium ea ducimus aliquam iure quo vitae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio recusandae cupiditate quo molestias error
+          nesciunt itaque sunt ipsa facere amet maiores laborum reprehenderit autem et veniam, nam asperiores eaque
+          consequatur tenetur. Quae, mollitia! Temporibus totam dolor quis hic distinctio expedita alias quaerat
+          obcaecati perferendis atque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quod voluptas nesciunt beatae molestias
+          reprehenderit veritatis, praesentium ab recusandae. Rerum quaerat iure facilis rem nihil est consequatur
+          tempore tempora iste possimus natus, a ad! Facilis et quidem quos. Eligendi corrupti eaque porro
+          repudiandae quis ab optio, tenetur sunt labore quibusdam a assumenda dignissimos dolore alias atque eum?
+          Nesciunt, voluptatem eum?
+        </p>
+      </div>
+      <div class="col-md-6">
+        <img src="/images/feature-1.jpg" alt="" class="img-fluid border border-primary border-6" />
+      </div>
+    </div> -->
+  <!-- Feature 3 
+    <div class="row">
+      <div class="col-md-6">
+        <img src="/images/feature-1.jpg" alt="" class="img-fluid border border-primary border-6" />
+      </div>
+      <div class="col-md-6 small p-3">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, vero. Iusto amet expedita, saepe
+          voluptates ab beatae cupiditate eaque, accusantium numquam fugiat modi? Iusto necessitatibus accusantium
+          aspernatur reiciendis omnis commodi animi consequatur aliquam dignissimos. Quisquam mollitia repellat
+          ducimus, sit, aliquam non libero quae asperiores distinctio dolores accusamus culpa architecto earum!
+        </p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus beatae reiciendis doloribus veniam
+          accusantium ea ducimus aliquam iure quo vitae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio recusandae cupiditate quo molestias error
+          nesciunt itaque sunt ipsa facere amet maiores laborum reprehenderit autem et veniam, nam asperiores eaque
+          consequatur tenetur. Quae, mollitia! Temporibus totam dolor quis hic distinctio expedita alias quaerat
+          obcaecati perferendis atque!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad quod voluptas nesciunt beatae molestias
+          reprehenderit veritatis, praesentium ab recusandae. Rerum quaerat iure facilis rem nihil est consequatur
+          tempore tempora iste possimus natus, a ad! Facilis et quidem quos. Eligendi corrupti eaque porro
+          repudiandae quis ab optio, tenetur sunt labore quibusdam a assumenda dignissimos dolore alias atque eum?
+          Nesciunt, voluptatem eum?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
+
+<!-- /* Escritorio extra grande */
+@media only screen and (min-width: 1200px){
+
+}
+/* Escritorio grande */
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+   .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+    }
+.wrapper-img-illustration-2{
+    order: 4;
+}
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+
+} -->

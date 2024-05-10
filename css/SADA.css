@@ -1,115 +1,266 @@
 @import url(../css/normalize.css);
-
-.navbar{
-    background-color: red;
+#logo-sada {
+  /* background-color: aquamarine; */
+  width: 7%;
+}
+.img-illustration-2 {
+  width: 80%;
+}
+/* header {
+  background-color: red;
 }
 
-.logo-sada{
-    width: 20%;
+.hero-img {
+  max-width: 100%;
 }
-
-
-/**/ .hero-img{
-    max-width: 100%;
-} 
-
+ */
 /* ------------------------------------- */
 
-.img-illustration-2{
-    max-width: 80%;
-    
-}
-
 /* -------- MEDIA QUERIES --------- */
-@media (min-width:360px) {
+@media (max-width: 360px){
+  #logo-sada {
+    width: 15%;
+  }
+  .mb-5 {
+    margin-bottom: 0 !important;
+  }
+  .title-hero,
+  .paragraph-necesitas,
+  .paragraph-curso-online,
+  .paragraph-inscribete {
+    text-align: center;
+  }
+  /* boton llamado a la accion */
+  .cta-1 {
+    background-color: brown;
+    transform: translateX(4%);
+  }
+  /* boton llamado a la accion utilities-Bootstrap*/
+  .w-50 {
+    width: 60% !important;
+  }
+  /* boton llamado a la accion */
+  .wrapper-cta {
+    width: 100%;
+    text-align: center;
+  }
+
+  .img-illustration-1 {
+    width: 80%;
+    transform: translateX(10%);
+  }
+
+  .img-illustration-2 {
+    width: 60%;
+    transform: translate(32%, 13%);
+    order: 2;
+  }
+  .wrapper-img-illustration-2{
+    height: 50vh;
+  }
+  .img-illustration-3{
+    width: 30%;
+  }
+  h2 {
+    font-size: calc(1.4rem + 0.3vw) !important;
+    transform: translateY(54%);
+  }
+  .list-box {
+    width: 90%;
+    transform: translate(-10%,4%);
+  }
+  .container-card-caroline{
+    background-color: rgb(221, 173, 173);
+  transform: translateX(4%);
+    width: 20rem;
+  transform: translateX(3%);
+  border: 0;
+  }
+  }
+  .caroline-image{
+    width: 60%;
+    border-radius: 50%;
+  }
+  .card-text{
+    background-color: blue;
+    font-size: 0.7rem;
+  }
+
+
+@media (min-width: 360px) {
+  .wrapper-img-illustration-2 {
+    order: 2;
+  }
 }
-@media (max-width:360px) {
-.logo-sada{
+@media (min-width: 576px) {
+  #logo-sada {
+    width: 15%;
+  }
+  /* .mb-5 {
+    margin-bottom: 1.25rem !important;
+  } */
+  .title-hero,
+  .paragraph-necesitas,
+  .paragraph-curso-online,
+  .paragraph-inscribete {
+    text-align: center;
+  }
+  .cta-1 {
+    background-color: brown;
+    transform: translateX(50%);
+  }
+  .title-aprenderas {
+    font-size: 1.8rem;
+    text-align: center;
+    transform: translateY(50%);
+    /* margin-top: 20px; */
+  }
+  /* .list-box{
+    transform: translateY(6%);
+  } */
+  .img-illustration-2 {
+    width: 60%;
+    transform: translate(32%, -2%);
+  }
+  .caroline-image{
+    width: 80%;
+    border-radius: 50%;
+  }
+  .container-card-caroline{
+    background-color: rgb(194, 163, 163);
+    width: 29rem;
+  transform: translateX(4%);
+  }
+}
+@media (max-width: 576px) {
+  .container-card-caroline{
+    margin: 0;
+}
+}
+@media (min-width: 768px) {
+  .container-card-caroline{
+    background-color: blueviolet;
+    width: 22rem;
+    margin: 0;
+    border: 0;
+}
+#logo-sada{
+  width: 20%;
+  padding: 1.7rem;
+}
+}
+/* 
+@media (min-width: 360px) {
+  .title-hero,
+  .paragraph-necesitas,
+  .paragraph-curso-online,
+  .paragraph-inscribete{
+    text-align: center;
+  }
+  .img-illustration-1{
+    width: 50%;
+  }
+  } */
+/* @media only screen and (max-width: 360px),
+(min-width: 360px) {
+  .logo-sada {
     width: 15%;
     transform: translateX(142px);
-}
-.title-hero{
+  }
+  .title-hero,
+  .paragraph-necesitas,
+  .paragraph-curso-online,
+  .paragraph-inscribete{
+    text-align: center;
+  }
+
+  .title-hero {
     font-size: 1.6rem;
+  }
+  .paragraph-necesitas {
+    font-size: 0.9rem;
+  }
+  .paragraph-curso-online {
+    font-weight: 500;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
 }
-.paragraph-necesitas{
+@media (min-width: 576px) {
+  .title-hero {
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper-img-illustration-2 {
+    order: 1;
+  }
+
+}
+@media (min-width: 768px) {
+  .title-hero {
+    text-align: center;
+  }
+}
+@media (min-width: 767px) {
+  .logo-sada {
+    transform: translateX(196px);
+  }
+  .hero-text {
+    text-align: center;
+  }
+}
+@media (max-width: 767px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .wrapper-img-illustration-2 {
+    order: 1;
+  }
+}
+@media (min-width: 992px) {
+}
+@media (min-width: 1200px) {
+}
+@media (min-width: 1400px) {
+} */
+/* @media (max-width: 360px) {} */
+/* .logo-sada {
+    width: 15%;
+    transform: translateX(142px);
+  }
+  .title-hero {
+    font-size: 1.6rem;
+  }
+  .paragraph-necesitas {
     text-align: center;
     font-size: 0.9rem;
-}
-.paragraph-curso-online{
+  }
+  .paragraph-curso-online {
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-}
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+      text-align: center;
+  }
 
-  .order-1 {
-    order: 2 !important;
-}
+  .wrapper-img-illustration-2 {
+    order: 2;
+  } */
 
-}
-@media (min-width:517px) {
-    .logo-sada{
-        width: 15%;
-        transform: translateX(217px);
-    }
-    .title-hero{
-        font-size: 1.6rem;
-    }
-    .paragraph-necesitas{
-        text-align: center;
-        font-size: 0.9rem;
-    }
-    .paragraph-curso-online{
-        font-weight: 500;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-    }
-}
-
-    /*  {
+/*  {
         text-align: center;
         font-size: 0.8rem;
     } */
- 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  
- }
- @media (max-width: 576px) {
-    .title-hero{
-        text-align: center;
-       }
- }
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
 
- }
+/* // Small devices (landscape phones, 576px and up) */
+
+/* // Medium devices (tablets, 768px and up) */
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
- }
 
 /* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-    .logo-sada{
-        width: 15%;
-        transform: translateX(217px);
-    }
-    .title-hero{
-        font-size: 1.6rem;
-    }
-    .paragraph-necesitas{
-        text-align: center;
-        font-size: 0.9rem;
-    }
-    .paragraph-curso-online{
-        font-weight: 500;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        text-align: center;
-    }
- }
 
 /* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-
- }
