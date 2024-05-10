@@ -1,8 +1,15 @@
 @import url(../css/normalize.css);
+
+
+.wrapper-img-illustration-2,
+.box-header{
+  padding: 0;
+}
 #logo-sada {
   /* background-color: aquamarine; */
   width: 7%;
 }
+
 .img-illustration-2 {
   width: 80%;
 }
@@ -17,7 +24,7 @@
 /* ------------------------------------- */
 
 /* -------- MEDIA QUERIES --------- */
-@media (max-width: 360px){
+@media (max-width: 360px) {
   #logo-sada {
     width: 15%;
   }
@@ -55,10 +62,11 @@
     transform: translate(32%, 13%);
     order: 2;
   }
-  .wrapper-img-illustration-2{
+  .wrapper-img-illustration-2 {
     height: 50vh;
+
   }
-  .img-illustration-3{
+  .img-illustration-3 {
     width: 30%;
   }
   h2 {
@@ -67,25 +75,24 @@
   }
   .list-box {
     width: 90%;
-    transform: translate(-10%,4%);
+    transform: translate(-10%, 4%);
   }
-  .container-card-caroline{
+  .container-card-caroline {
     background-color: rgb(221, 173, 173);
-  transform: translateX(4%);
+    transform: translateX(4%);
     width: 20rem;
-  transform: translateX(3%);
-  border: 0;
+    transform: translateX(3%);
+    border: 0;
   }
-  }
-  .caroline-image{
-    width: 60%;
-    border-radius: 50%;
-  }
-  .card-text{
-    background-color: blue;
-    font-size: 0.7rem;
-  }
-
+}
+.caroline-image {
+  width: 60%;
+  border-radius: 50%;
+}
+.card-text {
+  background-color: blue;
+  font-size: 0.7rem;
+}
 
 @media (min-width: 360px) {
   .wrapper-img-illustration-2 {
@@ -122,32 +129,100 @@
     width: 60%;
     transform: translate(32%, -2%);
   }
-  .caroline-image{
+  .caroline-image {
     width: 80%;
     border-radius: 50%;
   }
-  .container-card-caroline{
+  .container-card-caroline {
     background-color: rgb(194, 163, 163);
     width: 29rem;
-  transform: translateX(4%);
+    transform: translateX(4%);
   }
 }
+/* .......... mobile .......... */
 @media (max-width: 576px) {
-  .container-card-caroline{
+  .container-card-caroline {
     margin: 0;
+  }
 }
-}
+/* .......... tablet .......... */
 @media (min-width: 768px) {
-  .container-card-caroline{
+   #logo-sada {
+    width: 20%;
+    padding: 1.7rem;
+  }
+  .container-card-caroline {
     background-color: blueviolet;
     width: 22rem;
     margin: 0;
     border: 0;
+  }
 }
-#logo-sada{
-  width: 20%;
-  padding: 1.7rem;
+
+
+/* .......... laptop .......... */
+@media (min-width: 1200px) {
+  #logo-sada {
+    width: 15%;
+    padding: 1.7rem;
+  }
+  .cta-1 {
+    transform: translate(50%, 90%);
+  }
+  .text-content-box {
+    order: 2;
+  }
+  .list-box {  
+    background-color: aqua;
+    width: 180%;
+    font-size: 1.6rem;
+    transform: translateX(-27%);
+  }
+  .title-aprenderas {
+  
+    font-size: 2.6rem;
+  }
+  /* .wrapper-img-illustration-2{
+
+  } */
+  .img-illustration-2 {
+    /* width: 30%; */
+    transform: translateX(25%);
+  }
+  .wrapper-faq{
+    width: 50%;
+  }
+  .wrapper-caroline{
+    width: 40%;
+  }
 }
+@media (min-width: 1400px) {
+  #logo-sada {
+    width: 15%;
+    padding: 1.7rem;
+  }
+  .cta-1 {
+    transform: translate(50%, 90%);
+  }
+  .text-content-box {
+    order: 2;
+  }
+  .list-box {
+    font-size: 1.6rem;
+  }
+  .title-aprenderas {
+    font-size: 2.6rem;
+  }
+  .img-illustration-2 {
+    width: 80%;
+    transform: translateX(19%);
+  }
+  .wrapper-faq{
+    width: 50%;
+  }
+  .wrapper-caroline{
+    width: 40%;
+  }
 }
 /* 
 @media (min-width: 360px) {

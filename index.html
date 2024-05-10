@@ -17,16 +17,17 @@
 <body>
   <main>
     <!-- ****************** BLOCK- HEADER ********************** -->
-    <header class="header">
+    <header>
       <div class="container-fluid bg-danger text-center">
         <a href="#">
           <img id="logo-sada" src="./img/Recurso-logo-sada.svg" alt="logo-sada">
         </a>
       </div>
-      <div class="container">
-        <div class="row ">
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto ">
-            <div class="text-container p-2 mb-5">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
+          <!-- .................... inicio columna 1 header .................... -->
+          <div class="box-header col-sm-12 col-md-7 col-lg-7 col-xl-6 col-xxl-6">
+            <div class="text-container mb-5">
               <h1 class="title-hero display-4 text-capitalize">Domina las Finanzas de tu
                 Emprendimiento
               </h1>
@@ -44,32 +45,36 @@
               <div class="wrapper-cta py-3">
                 <a class="cta-1 py-2 btn btn-primary text-uppercase w-50" href="#box-form">Quiero Inscribirme</a>
               </div>
-
             </div>
           </div>
-          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto bg-danger">
+          <!-- .................... fin columna 1 header .................... -->
+
+          <!-- .................... inicio columna 2 header .................... -->
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
             <div class="image-container">
               <img src="./img/illustration1.svg" alt="" class="img-illustration-1 img-fluid">
             </div>
           </div>
+          <!-- .................... fi columna 2 header .................... -->
         </div>
       </div>
     </header>
 
     <!-- ****************** BLOCK-ONE ********************** -->
     <section class="block-one">
-      <div class="container">
-        <div class="row ">
+      <div class="container-fluid bg-danger">
+        <div class="row justify-content-around">
           <!-- .................... inicio columna 1 block-one  .................... -->
-          <div class="wrapper-img-illustration-2 bg-danger align-self-center col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
+          <div
+            class="wrapper-img-illustration-2 align-self-center col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-6">
             <img src="./img/illustration2.svg" alt="illustration2" class="img-illustration-2 img-fluid">
           </div>
           <!-- .................... fin columna 1 block-one  .................... -->
 
           <!-- .................... inicio columna 2 block-one  .................... -->
-          <div class="text-content-box col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto align-self-center py-3 git">
+          <div class="text-content-box col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 align-self-center py-3">
             <h2 class="title-aprenderas h4 text-center">Qué aprenderás?</h2>
-            <ul class="list-box lh-lg h5 mx-5">
+            <ul class="list-box lh-lg h5 py-5 mx-5">
               <li class="list-block-two">Principios básicos de contabilidad y finanzas.</li>
               <li class="list-block-two">Cómo crear y gestionar un presupuesto efectivo.</li>
               <li class="list-block-two">Estrategias para aumentar la rentabilidad y reducir costos.</li>
@@ -89,11 +94,11 @@
 
     <!-- ****************** BLOCK- TWO ********************** -->
     <section class="block-two ">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid bg-warning">
+        <div class="row justify-content-around">
           <!-- .................... inicio columna 1 block-two  .................... -->
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto py-2 bg-secondary">
-            <h3 class="title-faq h5 text-center">Preguntas Frecuentes</h3>
+          <div class="wrapper-faq col-sm-12 col-md-7 col-lg-7 col-xl-6 col-xxl-6 py-2 mx-auto bg-secondary">
+            <h3 class="title-faq h5 py-3 text-center">Preguntas Frecuentes</h3>
 
             <!--🎇 incio grupo acordion -->
             <div class="accordion" id="accordionExample">
@@ -106,13 +111,13 @@
                     ¿Se requieren conocimientos previos en finanzas?
                   </button>
                 </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                   <div class="accordion-body">
                     No, el curso está diseñado para emprendedores de todos los
                     niveles y no se requieren conocimientos previos en finanzas.
                   </div>
                 </div>
-              </div>
+              </div><br><br>
               <!-- .................... acordion-2 .................... -->
 
               <div class="accordion-item">
@@ -128,7 +133,7 @@
                     respaldará tus conocimientos en finanzas para emprendedores.
                   </div>
                 </div>
-              </div>
+              </div><br><br>
               <!-- .................... acordion-3 .................... -->
 
               <div class="accordion-item">
@@ -144,7 +149,7 @@
                     donde podrás acceder a todo el contenido del curso.
                   </div>
                 </div>
-              </div>
+              </div><br><br>
               <!-- .................... acordion-4 .................... -->
 
               <div class="accordion-item">
@@ -160,7 +165,7 @@
                     grupos o empresas.
                   </div>
                 </div>
-              </div>
+              </div><br><br>
               <!-- .................... acordion-5 .................... -->
 
               <div class="accordion-item">
@@ -184,9 +189,9 @@
           <!-- .................... fin columna 1 block-two  .................... -->
 
           <!-- .................... inicio columna 2 block-two  .................... -->
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto py-5 bg-primary">
+          <div class="wrapper-caroline col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 py-5">
 
-            <div class="container-card-caroline card text-center ">
+            <div class="container-card-caroline card text-center mx-5">
               <h3 class="title-card-caroline h5 py-3 text-center">Quién te acompañará?</h3>
               <img src="./img/img-Caroline-Sada-unsplash-.jpg" class="caroline-image img-fluid mx-auto " alt="...">
               <div class="content-text card-body bg-warning">
@@ -205,25 +210,36 @@
 
     <!-- ****************** BLOCK-THREE ********************** -->
     <section class="block-three">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="row justify-content-around">
           <!-- .................... inicio columna 1 block-three  .................... -->
-          <div class="col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 mx-auto py-5 bg-danger">
-
+          <div class="col-sm-12 col-md-6 col-lg-7 col-xl-6 col-xxl-6 py-5 bg-danger">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quis quae fugiat iste reprehenderit velit
+              cum, natus ea dolores, voluptas et. Quos facere aliquam laudantium, quo error quisquam ducimus soluta.
+            </p>
           </div>
           <!-- .................... fin columna 1 block-three  .................... -->
 
           <!-- .................... inicio columna 2 block-three  .................... -->
-          <div class="col-sm-12 col-md-6 mx-auto py-5 bg-secondary">
+          <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-5 bg-secondary">
             <!-- ..... sub columna ..... -->
             <div class="row ">
               <!-- columna-A -->
-              <div class="col-md-7   bg-warning">
-                jjjjjjj
+              <div class="col-md-7 bg-warning">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vel. Illo facere tempore eos sapiente
+                  vel labore aperiam. Incidunt rem rerum numquam laudantium illo molestias ad blanditiis fuga odio
+                  eveniet.
+                </p>
               </div>
-               <!-- columna-B -->
+              <!-- columna-B -->
               <div class="col-md-7  bg-primary">
-kkkkkkkk
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nobis itaque molestiae possimus sunt
+                  nisi deleniti eveniet repudiandae? Quibusdam placeat earum nam doloribus veritatis tenetur similique
+                  totam laudantium blanditiis incidunt!
+                </p>
               </div>
             </div>
             <!-- ..... sub columna ..... -->
@@ -232,10 +248,19 @@ kkkkkkkk
         </div>
       </div>
     </section>
-    <!-- ññññññññññññññññññññññññññññññññññññññññññññ -->
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+<!-- ññññññññññññññññññññññññññññññññññññññññññññ -->
 
 
-    <!-- <header class="header pt-6 vh-100">
+<!-- <header class="header pt-6 vh-100">
 
     <div class="container">
       <div class="row">
@@ -256,67 +281,9 @@ kkkkkkkk
           </div>
         </div>
         </div>
+ .................... COLUMNA 1 BLOCK- TWO .................... -->
 
-        00000000000000000000000000000000000000 
-        <div class="col-md-6 ">
-          <div class="hero-column ">
-            <img class="hero-img img-fluid" src="./img/illustration1.svg" alt="">
-          </div>
-        </div>
-
-
-
-      </div>
-    </div>-->
-    <!-- <nav class="navbar "> </nav> -->
-    <!-- <div class="container"> </div> -->
-    <!-- <a href="#">
-      <img id="logo-sada" src="./img/Recurso-logo-sada.svg" alt="logo-sada">
-    </a> 
-  </header>-->
-  </main>
-  <!-- <div class="container-fluid">
-      <div class="container">
-        <div class="row"> -->
-  <!-- ****************** BLOCK-ONE ********************** -->
-  <!-- .................... COLUMNA 1 BLOCK- ONE .................... -->
-
-  <!--  -->
-
-
-  <!-- ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo -->
-
-
-  <!-- <div class="hero-text bg-warning  col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
-            <h1 class="title-hero text-md-start">Domina las Finanzas<br>de tu
-              Emprendimiento
-            </h1>
-            <p class="paragraph-necesitas fw-semibold text-sm-center text-md-center text-xl-start">
-              ¿Necesitas ayuda para crear un presupuesto efectivo y controlar tus gastos para maximizar
-              tus ingresos?
-            </p>
-
-            <p class="paragraph-curso-online fw-lighter text-sm-center text-md-center text-xl-start">curso online de
-              finanzas para emprendedores</p>
-
-            <p class="paragraph-inscribete h6 text-sm-center text-md-center text-xl-start">¡Inscríbete hoy y da el
-              primer paso <br> hacia el éxito
-              financiero!
-            </p>
-            <div class="wrapper-cta">
-              <a class="cta-1 btn" href="#box-form">Quiero Inscribirme</a>
-            </div>
-          </div> -->
-  <!-- .................... COLUMNA 2 BLOCK- ONE .................... -->
-  <!-- <div
-            class="hero-column text-center bg-danger d-flex align-items-center col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
-            <img class="hero-img img-fluid" src="./img/illustration1.svg" alt="">
-          </div> -->
-
-  <!-- ****************** BLOCK-TWO ********************** -->
-  <!-- .................... COLUMNA 1 BLOCK- TWO .................... -->
-
-  <!-- <div class="box-list bg-primary col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 order-1 ">
+<!--<div class="box-list bg-primary col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 order-1 ">
             <h2 class="title-aprenderas h4 text-center">Qué aprenderás?</h2>
             <ul class="lh-lg">
               <li class="list-block-two">Principios básicos de contabilidad y finanzas.</li>
@@ -331,8 +298,8 @@ kkkkkkkk
               </li>
             </ul>
           </div> -->
-  <!-- .................... COLUMNA 2 BLOCK- TWO .................... -->
-  <!-- <div
+<!-- .................... COLUMNA 2 BLOCK- TWO .................... -->
+<!-- <div
             class="wrapper-img-illustration-2 bg-danger d-flex align-items-center col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5  ">
             <img class="img-illustration-2 mx-auto img-fluid" src="./img/illustration2.svg" alt="">
           </div>
@@ -400,7 +367,7 @@ kkkkkkkk
 
       </div>
     </div> -->
-  <!-- 
+<!-- 
     <div class="container text-center">
       <div class="row row-cols-1 row-cols-md-4">
         <div class="col">Column</div>
@@ -410,7 +377,7 @@ kkkkkkkk
       </div>
     </div> -->
 
-  <!-- <div class="container text-center ">
+<!-- <div class="container text-center ">
       <div class="row row-cols-2">
         <div class="col bg-danger">
           <div class="col bg-primary"><img class="foto" src="./img/illustration3.svg" alt=""></div>
@@ -428,10 +395,10 @@ kkkkkkkk
  -->
 
 
-  <!-- Features 
+<!-- Features 
 <section class="features py-6">
   <div class="container">-->
-  <!-- Feature 1
+<!-- Feature 1
     <div class="row">
       <div class="col-md-6">
         <img src="/images/feature-1.jpg" alt="" class="img-fluid border border-primary border-6" />
@@ -462,7 +429,7 @@ kkkkkkkk
         </p>
       </div>
     </div> -->
-  <!-- Feature 2
+<!-- Feature 2
     <div class="row py-5">
       <div class="col-md-6 small p-3">
         <p>
@@ -493,7 +460,7 @@ kkkkkkkk
         <img src="/images/feature-1.jpg" alt="" class="img-fluid border border-primary border-6" />
       </div>
     </div> -->
-  <!-- Feature 3 
+<!-- Feature 3 
     <div class="row">
       <div class="col-md-6">
         <img src="/images/feature-1.jpg" alt="" class="img-fluid border border-primary border-6" />
@@ -525,16 +492,7 @@ kkkkkkkk
       </div>
     </div>
   </div>
-</section>
--->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-
-</body>
-
-</html>
-
+</section> -->
 <!-- /* Escritorio extra grande */
 @media only screen and (min-width: 1200px){
 
