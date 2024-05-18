@@ -1,341 +1,506 @@
 @import url(../css/normalize.css);
 
+:root {
+  --bs-form-invalid-color: #ffff99;
+  --bs-form-valid-color: #bfb0ff;
+  --bs-form-valid-border-color: #8400ff;
+  --text-color: #fac75f;
+}
+/* .......... CONFIGURACIONES GENERALES ........ */
 
-.wrapper-img-illustration-2,
-.box-header{
-  padding: 0;
+/* ..... COLOR DE FONDO ..... */
+header {
+  background: linear-gradient(#46134f, #8a236d, #30044b);
 }
-#logo-sada {
-  /* background-color: aquamarine; */
-  width: 7%;
+.block-one {
+  background-color: #671770df;
+}
+.block-two {
+  background-color: #510539;
+}
+.block-three {
+  background: #671770;
+}
+.block-four {
+  background-color: #671770;
+}
+.block-five {
+  background-color: #6c27a1;
+}
+footer {
+  background-color: #510539;
+  height: 40vh;
+  color: var(--text-color);
 }
 
-.img-illustration-2 {
-  width: 80%;
+/* ..... CONFIGURACION DE LAS IMAGENES ..... */
+.logo-sada {
+  width: 10%;
+  padding: 1.2rem;
 }
-/* header {
-  background-color: red;
-}
-
-.hero-img {
+.img-illustration-1 {
   max-width: 100%;
 }
- */
-/* ------------------------------------- */
-
-/* -------- MEDIA QUERIES --------- */
-@media (max-width: 360px) {
-  #logo-sada {
-    width: 15%;
-  }
-  .mb-5 {
-    margin-bottom: 0 !important;
-  }
-  .title-hero,
-  .paragraph-necesitas,
-  .paragraph-curso-online,
-  .paragraph-inscribete {
-    text-align: center;
-  }
-  /* boton llamado a la accion */
-  .cta-1 {
-    background-color: brown;
-    transform: translateX(4%);
-  }
-  /* boton llamado a la accion utilities-Bootstrap*/
-  .w-50 {
-    width: 60% !important;
-  }
-  /* boton llamado a la accion */
-  .wrapper-cta {
-    width: 100%;
-    text-align: center;
-  }
-
-  .img-illustration-1 {
-    width: 80%;
-    transform: translateX(10%);
-  }
-
-  .img-illustration-2 {
-    width: 60%;
-    transform: translate(32%, 13%);
-    order: 2;
-  }
-  .wrapper-img-illustration-2 {
-    height: 50vh;
-
-  }
-  .img-illustration-3 {
-    width: 30%;
-  }
-  h2 {
-    font-size: calc(1.4rem + 0.3vw) !important;
-    transform: translateY(54%);
-  }
-  .list-box {
-    width: 90%;
-    transform: translate(-10%, 4%);
-  }
-  .container-card-caroline {
-    background-color: rgb(221, 173, 173);
-    transform: translateX(4%);
-    width: 20rem;
-    transform: translateX(3%);
-    border: 0;
-  }
+.img-illustration-2 {
+  max-width: 80%;
 }
 .caroline-image {
-  width: 60%;
-  border-radius: 50%;
+  width: 70%;
 }
-.card-text {
-  background-color: blue;
+
+.image-testimonials {
+  margin: 0 auto;
+  display: block;
+}
+
+/* ..... CONFIGURACION DE TEXTOS ..... */
+.text-container,
+.box-block-two,
+.paragraph-course-details,
+.card-text,
+.text-reembolso,
+.title-testimonials,
+.title-name,
+.text-testimonials {
+  color: var(--bs-form-invalid-color);
+}
+.title-aprenderas,
+.list-box,
+.title-card-caroline,
+.card-title,
+.li-descuentos,
+.beneficios {
+  color: var(--text-color);
+}
+.text-testimonials {
   font-size: 0.7rem;
 }
 
-@media (min-width: 360px) {
-  .wrapper-img-illustration-2 {
-    order: 2;
-  }
+/* .......... BOTONES LLAMADO A LA ACCION ........... */
+.cta-1 {
+  background-color: var(--bs-form-invalid-color);
+  /* height: 30px;
+  padding: 0.2em;*/
+  color: #19041d;
 }
-@media (min-width: 576px) {
-  #logo-sada {
-    width: 15%;
+.cta-1:hover {
+  background-color: #b473d3;
+  color: var(--bs-form-invalid-color);
+}
+
+/* .......... MODIFICACIONES ESTILOS BOOTSTRAP ........... */
+
+/* ..... seccion preguntas frecuentes ..... */
+.accordion-item {
+  background-color: #6c27a100;
+  color: var(--text-color);
+}
+.accordion-button {
+  background-color: #b473d300;
+  color: var(--bs-form-invalid-color);
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url(../img/Recurso-logo-sada.svg);
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-form-invalid-color);
+  background-color: #ff000000;
+  box-shadow: #fcbebe00;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../img/Recurso-logo-sada.svg);
+  transform: rotate(360deg);
+}
+.accordion-item {
+  color: var(--text-color);
+  border: var(--bs-accordion-border-width) solid rgba(255, 0, 0, 0);
+}
+
+.container-card-caroline {
+  background-color: #641569;
+}
+
+/* iconos del carousel */
+.carousel-indicators {
+  transform: translateY(100%);
+  width: 20%;
+}
+.carousel-indicators [data-bs-target] {
+  background-color: rgb(243, 98, 224);
+}
+
+/* ..... FORMULARIO ..... */
+.background-form {
+  background-color: #510539;
+  height: 80vh;
+}
+.img-form {
+  width: 20%;
+}
+#btn-form {
+  background-color: #a501b4;
+  width: 9rem;
+  font-size: 0.75rem;
+  color: #fcff4a;
+}
+#btn-form:hover {
+  background-color: #d32ee2;
+  width: 9rem;
+  font-size: 0.75rem;
+  color: #fcff4a;
+}
+.form-label {
+  color: var(--bs-form-invalid-color);
+}
+
+/* -------- MEDIA QUERIES -------- */
+
+@media (min-width: 360px) {
+  .logo-sada {
+    width: 40%;
   }
-  /* .mb-5 {
-    margin-bottom: 1.25rem !important;
-  } */
-  .title-hero,
-  .paragraph-necesitas,
-  .paragraph-curso-online,
-  .paragraph-inscribete {
+  .img-illustration-1 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-10%);
+  }
+  .text-container {
     text-align: center;
   }
-  .cta-1 {
-    background-color: brown;
-    transform: translateX(50%);
+  .img-illustration-2 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-15%);
   }
   .title-aprenderas {
-    font-size: 1.8rem;
-    text-align: center;
-    transform: translateY(50%);
-    /* margin-top: 20px; */
+    transform: translateY(90%);
+    font-size: 1.5rem;
   }
-  /* .list-box{
-    transform: translateY(6%);
-  } */
-  .img-illustration-2 {
-    width: 60%;
-    transform: translate(32%, -2%);
+  .container-card-caroline {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+  }
+  .title-card-caroline {
+    font-size: 1.8rem;
   }
   .caroline-image {
-    width: 80%;
-    border-radius: 50%;
+    width: 70%;
   }
-  .container-card-caroline {
-    background-color: rgb(194, 163, 163);
-    width: 29rem;
-    transform: translateX(4%);
+  .title-faq {
+    font-size: 1.9rem;
   }
-}
-/* .......... mobile .......... */
-@media (max-width: 576px) {
-  .container-card-caroline {
-    margin: 0;
-  }
-}
-/* .......... tablet .......... */
-@media (min-width: 768px) {
-   #logo-sada {
-    width: 20%;
-    padding: 1.7rem;
-  }
-  .container-card-caroline {
-    background-color: blueviolet;
-    width: 22rem;
-    margin: 0;
-    border: 0;
-  }
-}
-
-
-/* .......... laptop .......... */
-@media (min-width: 1200px) {
-  #logo-sada {
-    width: 15%;
-    padding: 1.7rem;
+  .accordion-button,
+  .accordion {
+    font-size: 1.1rem;
   }
   .cta-1 {
-    transform: translate(50%, 90%);
+    margin: 0 auto;
+    display: block;
   }
-  .text-content-box {
-    order: 2;
+}
+
+/* -------------------------------- */
+@media (min-width: 576px) {
+  .logo-sada {
+    width: 20%;
   }
-  .list-box {  
-    background-color: aqua;
-    width: 180%;
-    font-size: 1.6rem;
-    transform: translateX(-27%);
+  .img-illustration-1 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-10%);
+  }
+  .text-container {
+    text-align: center;
+  }
+  .img-illustration-2 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(-15%);
   }
   .title-aprenderas {
-  
-    font-size: 2.6rem;
+    transform: translateY(90%);
+    font-size: 1.5rem;
   }
-  /* .wrapper-img-illustration-2{
-
-  } */
-  .img-illustration-2 {
-    /* width: 30%; */
-    transform: translateX(25%);
+  .container-card-caroline {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
   }
-  .wrapper-faq{
-    width: 50%;
+  .title-card-caroline {
+    font-size: 1.8rem;
   }
-  .wrapper-caroline{
-    width: 40%;
+  .caroline-image {
+    width: 70%;
+  }
+  .title-faq {
+    font-size: 1.9rem;
+  }
+  .accordion-button,
+  .accordion {
+    font-size: 1.1rem;
   }
 }
-@media (min-width: 1400px) {
-  #logo-sada {
-    width: 15%;
-    padding: 1.7rem;
+
+/* -------------------------------- */
+@media (min-width: 992px) {
+  .logo-sada {
+    width: 12%;
+  }
+  .img-illustration-1 {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+  .text-container {
+    text-align: start;
+  }
+  .paragraph-necesitas {
+    transform: translateY(40%);
+    font-size: 1.3rem;
+  }
+  .paragraph-curso-online {
+    font-size: 1.2rem;
+    transform: translateY(40%);
+  }
+  .paragraph-inscribete {
+    font-size: 1.1rem;
+    transform: translateY(30%);
   }
   .cta-1 {
-    transform: translate(50%, 90%);
+    transform: translateY(50%);
   }
-  .text-content-box {
-    order: 2;
+  .title-aprenderas {
+    transform: translateY(90%);
+    font-size: 1.5rem;
+  }
+  .img-illustration-2 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    order: 1;
+    transform: translateY(-15%);
   }
   .list-box {
+    order: 2;
+  }
+  .container-card-caroline {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  .title-card-caroline {
+    font-size: 1.8rem;
+  }
+  .caroline-image {
+    width: 70%;
+  }
+  .title-faq {
+    font-size: 1.9rem;
+  }
+  .accordion-button,
+  .accordion {
+    font-size: 1.1rem;
+  }
+  .cta-1 {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .img-illustration-3 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+  .background-form {
+    height: 100vh;
+  }
+  #btn-form {
+    width: 15rem;
+    font-size: 1.4rem;
+    transform: translateY(-60%);
+  }
+  .wrapper-text-paragraph-course-details {
+    margin: 0 auto;
+  }
+  .paragraph-course-details {
+    width: 120%;
+    font-size: 1.2rem;
+    text-align: center;
+    transform: translateX(-10%);
+  }
+  .title-testimonials {
+    font-size: 1.3rem;
+  }
+  .testimonials {
+    transform: translateY(-10%);
+  }
+  .image-testimonials {
+    width: 30%;
+  }
+  .text-testimonials {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .carousel-indicators {
+    transform: translateY(180%);
+  }
+  .wrapper-icon {
+    transform: translateY(60%);
+  }
+  i {
     font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .copy-sada {
+    text-align: center;
+    font-size: 1rem;
+    transform: translateY(160%);
+  }
+}
+
+/* -------------------------------- */
+@media (max-width: 1200px) {
+  .logo-sada {
+    width: 12%;
+  }
+  .img-illustration-1 {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-7%, 10%);
+  }
+  .text-container {
+    text-align: start;
+  }
+  .title-hero {
+    font-size: 2.3rem;
+  }
+  .paragraph-necesitas {
+    transform: translateY(20%);
+    font-size: 1.7rem;
+  }
+  .paragraph-curso-online {
+    font-size: 1.5rem;
+    transform: translateY(40%);
+  }
+  .paragraph-inscribete {
+    font-size: 1.6rem;
+    transform: translateY(30%);
+  }
+  .cta-1 {
+    transform: translateY(50%);
   }
   .title-aprenderas {
-    font-size: 2.6rem;
+    transform: translate(-20%, 90%);
+    font-size: 2.3rem;
   }
   .img-illustration-2 {
-    width: 80%;
-    transform: translateX(19%);
-  }
-  .wrapper-faq{
-    width: 50%;
-  }
-  .wrapper-caroline{
-    width: 40%;
-  }
-}
-/* 
-@media (min-width: 360px) {
-  .title-hero,
-  .paragraph-necesitas,
-  .paragraph-curso-online,
-  .paragraph-inscribete{
-    text-align: center;
-  }
-  .img-illustration-1{
-    width: 50%;
-  }
-  } */
-/* @media only screen and (max-width: 360px),
-(min-width: 360px) {
-  .logo-sada {
-    width: 15%;
-    transform: translateX(142px);
-  }
-  .title-hero,
-  .paragraph-necesitas,
-  .paragraph-curso-online,
-  .paragraph-inscribete{
-    text-align: center;
-  }
-
-  .title-hero {
-    font-size: 1.6rem;
-  }
-  .paragraph-necesitas {
-    font-size: 0.9rem;
-  }
-  .paragraph-curso-online {
-    font-weight: 500;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-  }
-
-}
-@media (min-width: 576px) {
-  .title-hero {
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .wrapper-img-illustration-2 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
     order: 1;
+    transform: translate(-30%, 2%);
   }
-
-}
-@media (min-width: 768px) {
-  .title-hero {
-    text-align: center;
+  .text-content-box {
+    width: 50%;
+    transform: translateX(-37%);
   }
-}
-@media (min-width: 767px) {
-  .logo-sada {
-    transform: translateX(196px);
-  }
-  .hero-text {
-    text-align: center;
-  }
-}
-@media (max-width: 767px) {
-  .row {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .wrapper-img-illustration-2 {
-    order: 1;
-  }
-}
-@media (min-width: 992px) {
-}
-@media (min-width: 1200px) {
-}
-@media (min-width: 1400px) {
-} */
-/* @media (max-width: 360px) {} */
-/* .logo-sada {
-    width: 15%;
-    transform: translateX(142px);
-  }
-  .title-hero {
-    font-size: 1.6rem;
-  }
-  .paragraph-necesitas {
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  .paragraph-curso-online {
-    font-weight: 500;
-    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
-      sans-serif;
-      text-align: center;
-  }
-
-  .wrapper-img-illustration-2 {
+  .list-box {
+    width: 130%;
+    font-size: 1.7rem;
     order: 2;
-  } */
+    transform: translateX(-6%);
+  }
+  .row {
+    justify-content: center;
+  }
 
-/*  {
-        text-align: center;
-        font-size: 0.8rem;
-    } */
+  .title-card-caroline {
+    font-size: 1.8rem;
+  }
+  .caroline-image {
+    width: 70%;
+  }
+  .wrapper-faq {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+  }
+  .title-faq {
+    font-size: 1.9rem;
+  }
+  .accordion-button,
+  .accordion {
+    font-size: 1.9rem;
+  }
 
-/* // Small devices (landscape phones, 576px and up) */
+  .img-illustration-3 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+  }
+  .background-form {
+    height: 100vh;
+  }
+  #btn-form {
+    width: 15rem;
+    font-size: 1.4rem;
+    transform: translateY(-60%);
+  }
+  .wrapper-text-paragraph-course-details {
+    margin: 0 auto;
+  }
+  .paragraph-course-details {
+    width: 120%;
+    font-size: 1.2rem;
+    text-align: center;
+    transform: translateX(-10%);
+  }
+  .title-testimonials {
+    font-size: 1.3rem;
+  }
+  .testimonials {
+    transform: translateY(-10%);
+  }
+  .image-testimonials {
+    width: 30%;
+  }
+  .text-testimonials {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1rem;
+  }
+  .carousel-indicators {
+    transform: translateY(180%);
+  }
+  .wrapper-icon {
+    transform: translateY(60%);
+  }
+  i {
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  .copy-sada {
+    text-align: center;
+    font-size: 1rem;
+    transform: translateY(160%);
+  }
+}
 
-/* // Medium devices (tablets, 768px and up) */
-
-/* // Large devices (desktops, 992px and up) */
-
-/* // X-Large devices (large desktops, 1200px and up) */
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
+/* -------------------------------- */
+@media (max-width: 1400px) {
+}
