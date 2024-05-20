@@ -66,7 +66,7 @@ footer {
 }
 .title-aprenderas,
 .list-box,
-.title-card-caroline,
+#title-card-caroline,
 .card-title,
 .li-descuentos,
 .beneficios {
@@ -77,13 +77,18 @@ footer {
 }
 
 /* .......... BOTONES LLAMADO A LA ACCION ........... */
-.cta-1 {
+.cta-1,
+.cta-2 {
   background-color: var(--bs-form-invalid-color);
   /* height: 30px;
   padding: 0.2em;*/
   color: #19041d;
 }
 .cta-1:hover {
+  background-color: #b473d3;
+  color: var(--bs-form-invalid-color);
+}
+.cta-2:hover {
   background-color: #b473d3;
   color: var(--bs-form-invalid-color);
 }
@@ -141,7 +146,6 @@ footer {
 /* ..... FORMULARIO ..... */
 .background-form {
   background-color: #510539;
-  height: 80vh;
 }
 .img-form {
   width: 20%;
@@ -149,13 +153,13 @@ footer {
 #btn-form {
   background-color: #a501b4;
   width: 9rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #fcff4a;
 }
 #btn-form:hover {
   background-color: #d32ee2;
   width: 9rem;
-  font-size: 0.75rem;
+  font-size: 1rem;
   color: #fcff4a;
 }
 .form-label {
@@ -164,188 +168,549 @@ footer {
 
 /* -------- MEDIA QUERIES -------- */
 
+/* ----- MEDIA QUERIES 360px ----- */
 @media (min-width: 360px) {
+  .block-four {
+    height: 70vh;
+  }
+  /* imagenes */
   .logo-sada {
-    width: 40%;
+    width: 33%;
+    transform: translateY(-10%);
   }
   .img-illustration-1 {
     width: 60%;
     margin: 0 auto;
     display: block;
-    transform: translateY(-10%);
-  }
-  .text-container {
-    text-align: center;
+    transform: translateY(-20%);
   }
   .img-illustration-2 {
     width: 50%;
     margin: 0 auto;
     display: block;
-    transform: translateY(-15%);
+    transform: translateY(23%);
   }
-  .title-aprenderas {
-    transform: translateY(90%);
-    font-size: 1.5rem;
-  }
-  .container-card-caroline {
-    width: 70%;
+  .img-illustration-3 {
+    width: 60%;
     margin: 0 auto;
     display: block;
   }
-  .title-card-caroline {
-    font-size: 1.8rem;
+
+  /* ..... configuracion card-caroline */
+  .wrapper-caroline {
+    width: 90%;
+    margin: 0 auto;
+    /* transform: translateY(2%); */
+  }
+  .container-card-caroline {
+    height: 450px;
+    /* transform: translateY(-6.2%); */
+  }
+  #title-card-caroline {
+    font-size: 1.2rem;
   }
   .caroline-image {
     width: 70%;
   }
+  .card-title {
+    font-size: 1.1rem;
+  }
+  .card-text {
+    /* width: 100%; */
+    font-size: 0.8rem;
+    /* margin: 0 auto; */
+  }
+
+  /* textos */
+  .text-container {
+    text-align: center;
+  }
+  .title-hero {
+    transform: translateY(-30%);
+  }
+  .paragraph-necesitas {
+    font-size: 1rem;
+    line-height: 2;
+    transform: translateY(1%);
+  }
+  .paragraph-curso-online {
+    font-size: 1rem;
+    transform: translateY(10%);
+  }
+  .paragraph-inscribete {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    transform: translateY(10%);
+  }
+  .title-aprenderas {
+    transform: translateY(190%);
+    font-size: 1.6rem;
+  }
+  .text-content-box {
+    width: 80%;
+    transform: translateX(10%);
+  }
+  .list-box {
+    width: 100%;
+    font-size: 1.2rem;
+    transform: translate(-15%, 5%);
+  }
+  .wrapper-faq {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+
   .title-faq {
-    font-size: 1.9rem;
+    font-size: 1.3rem;
+    transform: translateY(40%);
+    margin: 0 auto;
+  }
+  .accordion {
+    transform: translateY(18%);
   }
   .accordion-button,
   .accordion {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    transform: translateY(7%);
   }
-  .cta-1 {
+  .wrapper-text-paragraph-course-details {
+    transform: translate(1%, 10%);
+  }
+  .paragraph-course-details {
+    width: 90%;
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+    text-align: center;
+  }
+  .wrapper-descuentos-beneficios {
+    transform: translateY(15%);
+  }
+
+  .descuentos,
+  .beneficios {
+    width: 80%;
+    font-size: 0.8rem;
+  }
+  .descuentos {
+    padding: 0;
+    transform: translate(1%, -30%);
+  }
+  .beneficios {
+    padding: 0;
+    transform: translate(1%, -40%);
+  }
+  .title-testimonials {
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  /*  botones llamado a la accion */
+  .wrapper-cta-1 {
+    transform: translate(20%, -4%);
+  }
+  .wrapper-cta-1 {
+    width: 70%;
+  }
+  .wrapper-cta-2 {
+    transform: translate(5%, 30%);
+  }
+  .wrapper-cta-2 {
+    width: 60%;
+  }
+  .wrapper-cta-2 {
+    font-size: 0.9rem;
     margin: 0 auto;
     display: block;
   }
+
+  /* formulario */
+  .background-form {
+    height: 95vh;
+  }
+  #btn-form {
+    transform: translateY(-60%);
+  }
+  .text-reembolso {
+    font-size: 0.9rem;
+  }
+
+  /* sector testimonios */
+  .testimonials {
+    transform: translateY(-10%);
+  }
+  .title-name {
+    font-size: 0.8rem;
+  }
+  .image-testimonials {
+    width: 50%;
+  }
+  .text-testimonials {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.9rem;
+  }
+  .carousel-indicators {
+    transform: translateY(180%);
+  }
+  .wrapper-icon {
+    transform: translateY(60%);
+  }
+
+  /* configuracion footer */
+  footer {
+    height: 25vh;
+  }
+  i {
+    font-size: 1rem;
+    cursor: pointer;
+    transform: translateY(-170%);
+  }
+  .copy-sada {
+    width: 60%;
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 0 auto;
+    transform: translateY(-1%);
+  }
 }
 
-/* -------------------------------- */
+/* ----- MEDIA QUERIES 576px ----- */
 @media (min-width: 576px) {
+  .block-four {
+    height: 103vh;
+  }
+  /* imagenes */
   .logo-sada {
-    width: 20%;
-  }
-  .img-illustration-1 {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-    transform: translateY(-10%);
-  }
-  .text-container {
-    text-align: center;
-  }
-  .img-illustration-2 {
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    transform: translateY(-15%);
-  }
-  .title-aprenderas {
-    transform: translateY(90%);
-    font-size: 1.5rem;
-  }
-  .container-card-caroline {
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-  }
-  .title-card-caroline {
-    font-size: 1.8rem;
-  }
-  .caroline-image {
-    width: 70%;
-  }
-  .title-faq {
-    font-size: 1.9rem;
-  }
-  .accordion-button,
-  .accordion {
-    font-size: 1.1rem;
-  }
-}
-
-/* -------------------------------- */
-@media (min-width: 992px) {
-  .logo-sada {
-    width: 12%;
+    width: 19%;
   }
   .img-illustration-1 {
     width: 80%;
+    transform: translateY(-7%);
+  }
+  .img-illustration-2 {
+    width: 60%;
+    /* */
+    transform: translateY(20%);
+  }
+  .img-illustration-3 {
+    width: 50%;
     margin: 0 auto;
     display: block;
   }
-  .text-container {
-    text-align: start;
+
+  /* ..... configuracion card-caroline ..... */
+  .wrapper-caroline {
+    margin: 0 auto;
+    width: 80%;
+    transform: translateY(2%);
+  }
+  .container-card-caroline {
+    height: 110vh;
+    transform: translateY(-6.2%);
+  }
+
+  #title-card-caroline {
+    font-size: 1.8rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  /* textos */
+  .title-hero {
+    font-size: 2rem;
   }
   .paragraph-necesitas {
-    transform: translateY(40%);
-    font-size: 1.3rem;
+    width: 100%;
+    font-size: 1.2rem;
+    transform: translate(0%, 6%);
   }
   .paragraph-curso-online {
+    font-size: 1rem;
+    transform: translateY(20%);
+  }
+  .paragraph-inscribete {
+    font-size: 1rem;
+    transform: translateY(20%);
+  }
+  .title-aprenderas {
+    transform: translate(15%, 190%);
+    font-size: 1.9rem;
+  }
+  .text-content-box {
+    width: 70%;
+  }
+  .list-box {
+    width: 150%;
+    font-size: 1.3rem;
+    transform: translate(-18%, 8%);
+  }
+  .wrapper-faq {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+  .title-faq {
+    font-size: 1.7rem;
+    transform: translateY(40%);
+  }
+  .accordion {
+    transform: translateY(15%);
+  }
+  .accordion-button,
+  .accordion {
+    font-size: 1.3rem;
+  }
+  .wrapper-text-paragraph-course-details {
+    margin: 0 auto;
+    transform: translateY(10%);
+  }
+  .wrapper-descuentos-beneficios {
+    width: 100%;
+    transform: translate(20%, 10%);
+  }
+  .paragraph-course-details {
+    width: 100%;
     font-size: 1.2rem;
+    text-align: center;
+    transform: translateX(0%);
+  }
+  .descuentos,
+  .beneficios {
+    font-size: 1rem;
+  }
+
+  /* ..... botones llamado a la accion ..... */
+  .wrapper-cta-1 {
+    transform: translate(33%, 10%);
+  }
+
+  .wrapper-cta-1 {
+    width: 60%;
+  }
+
+  .wrapper-cta-2 {
+    transform: translate(-15%, 130%);
+  }
+
+  .wrapper-cta-2 {
+    width: 30%;
+  }
+
+  /* formulario */
+  .background-form {
+    height: 117vh;
+  }
+  #btn-form {
+    transform: translateY(-60%);
+  }
+
+  /* ..... sector testimonios ..... */
+  .block-five {
+    height: 120vh;
+  }
+  .testimonials {
+    transform: translateY(-10%);
+  }
+  .title-testimonials {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .image-testimonials {
+    width: 45%;
+  }
+  .title-name {
+    transform: translateY(60%);
+    font-size: 1.2rem;
+  }
+  .text-testimonials {
+    width: 80%;
+    height: 20vh;
+    margin: 0 auto;
+    font-size: 1rem;
+    transform: translateY(20%);
+  }
+  .carousel-indicators {
+    transform: translateY(290%);
+  }
+  .wrapper-icon {
+    transform: translateY(160%);
+  }
+
+  /* ..... configuracion footer ..... */
+  footer {
+    height: 40vh;
+  }
+  i {
+    font-size: 1.3rem;
+    cursor: pointer;
+    transform: translateY(-200%);
+  }
+  .copy-sada {
+    text-align: center;
+    font-size: 1rem;
+    transform: translateY(120%);
+  }
+}
+
+/* ----- MEDIA QUERIES 992px ----- */
+@media (min-width: 992px) {
+  header {
+    height: 190vh;
+  }
+  .block-one {
+    height: 155vh;
+  }
+  /* imagenes */
+  .logo-sada {
+    width: 14%;
+  }
+  .img-illustration-1 {
+    width: 85%;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-7%, 4%);
+  }
+  .img-illustration-2 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    transform: translate(90%, 30%);
+  }
+  .img-illustration-3 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* ..... configuracion card-caroline ..... */
+  .wrapper-caroline {
+    margin: 0 auto;
+    width: 40%;
+    transform: translateY(2%);
+  }
+  .container-card-caroline {
+    height: 102vh;
+    transform: translateY(-6.2%);
+  }
+
+  #title-card-caroline {
+    font-size: 1.8rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  /* textos */
+  .text-container {
+    text-align: center;
+  }
+  .title-hero {
+    font-size: 2.6rem;
+  }
+  .paragraph-necesitas {
+    font-size: 1.4rem;
+    transform: translateY(6%);
+  }
+  .paragraph-curso-online {
+    font-size: 1.3rem;
     transform: translateY(40%);
   }
   .paragraph-inscribete {
     font-size: 1.1rem;
     transform: translateY(30%);
   }
-  .cta-1 {
-    transform: translateY(50%);
-  }
   .title-aprenderas {
-    transform: translateY(90%);
-    font-size: 1.5rem;
-  }
-  .img-illustration-2 {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-    order: 1;
-    transform: translateY(-15%);
-  }
-  .list-box {
-    order: 2;
-  }
-  .container-card-caroline {
-    width: 80%;
-    transform: translateX(10%);
-  }
-  .title-card-caroline {
+    transform: translate(10%, 290%);
     font-size: 1.8rem;
   }
-  .caroline-image {
+  .text-content-box {
+    width: 80%;
+  }
+  .list-box {
+    width: 100%;
+    font-size: 1.3rem;
+    transform: translate(-1%, 20%);
+  }
+  .wrapper-faq {
+    margin: 0 auto;
+    display: block;
     width: 70%;
   }
   .title-faq {
-    font-size: 1.9rem;
+    font-size: 2rem;
+    transform: translateY(40%);
+  }
+  .accordion {
+    transform: translateY(18%);
   }
   .accordion-button,
   .accordion {
-    font-size: 1.1rem;
-  }
-  .cta-1 {
-    margin: 0 auto;
-    display: block;
-  }
-
-  .img-illustration-3 {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-  }
-  .background-form {
-    height: 100vh;
-  }
-  #btn-form {
-    width: 15rem;
     font-size: 1.4rem;
-    transform: translateY(-60%);
   }
   .wrapper-text-paragraph-course-details {
     margin: 0 auto;
+    transform: translateY(10%);
+  }
+  .wrapper-descuentos-beneficios {
+    width: 60%;
+    transform: translate(50%, 20%);
   }
   .paragraph-course-details {
     width: 120%;
     font-size: 1.2rem;
+    line-height: 2;
     text-align: center;
     transform: translateX(-10%);
   }
-  .title-testimonials {
-    font-size: 1.3rem;
+
+  /* ..... botones llamado a la accion ..... */
+  .wrapper-cta-1 {
+    transform: translateY(-9%);
+  }
+
+  .wrapper-cta-1 {
+    width: 40%;
+    transform: translate(80%, 40%);
+  }
+
+  .wrapper-cta-2 {
+    transform: translate(-15%, 130%);
+  }
+
+  .wrapper-cta-2 {
+    width: 30%;
+  }
+
+  /* formulario */
+  .background-form {
+    height: 115vh;
+  }
+  #btn-form {
+    transform: translateY(-60%);
+  }
+
+  /* ..... sector testimonios ..... */
+  .block-five {
+    height: 103vh;
   }
   .testimonials {
     transform: translateY(-10%);
+  }
+  .title-testimonials {
+    font-size: 1.3rem;
   }
   .image-testimonials {
     width: 30%;
@@ -356,13 +721,18 @@ footer {
     font-size: 1rem;
   }
   .carousel-indicators {
-    transform: translateY(180%);
+    transform: translateY(195%);
   }
   .wrapper-icon {
-    transform: translateY(60%);
+    transform: translateY(160%);
+  }
+
+  /* ..... configuracion footer ..... */
+  footer {
+    height: 30vh;
   }
   i {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     cursor: pointer;
   }
   .copy-sada {
@@ -370,12 +740,14 @@ footer {
     font-size: 1rem;
     transform: translateY(160%);
   }
+
 }
 
-/* -------------------------------- */
-@media (max-width: 1200px) {
+/* ----- MEDIA QUERIES 1200px ----- */
+@media (min-width: 1200px) {
+  /* imagenes */
   .logo-sada {
-    width: 12%;
+    width: 10%;
   }
   .img-illustration-1 {
     width: 80%;
@@ -383,6 +755,42 @@ footer {
     display: block;
     transform: translate(-7%, 10%);
   }
+  .img-illustration-2 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-30%, -2%);
+  }
+  .img-illustration-3 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* ..... configuracion card-caroline ..... */
+  .wrapper-caroline {
+    margin: 0 auto;
+    width: 40%;
+    transform: translateY(2%);
+  }
+  .container-card-caroline {
+    height: 95vh;
+    transform: translateY(-6.2%);
+  }
+
+  #title-card-caroline {
+    font-size: 1.8rem;
+  }
+  .card-title {
+    font-size: 1.5rem;
+  }
+  .card-text {
+    width: 100%;
+    font-size: 1rem;
+    margin: 0 auto;
+  }
+
+  /* textos */
   .text-container {
     text-align: start;
   }
@@ -390,79 +798,53 @@ footer {
     font-size: 2.3rem;
   }
   .paragraph-necesitas {
-    transform: translateY(20%);
-    font-size: 1.7rem;
+    font-size: 1.4rem;
+    transform: translateY(6%);
   }
   .paragraph-curso-online {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transform: translateY(40%);
   }
   .paragraph-inscribete {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
     transform: translateY(30%);
   }
-  .cta-1 {
-    transform: translateY(50%);
-  }
   .title-aprenderas {
-    transform: translate(-20%, 90%);
-    font-size: 2.3rem;
-  }
-  .img-illustration-2 {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-    order: 1;
-    transform: translate(-30%, 2%);
+    transform: translate(-25%, 90%);
+    font-size: 2rem;
   }
   .text-content-box {
     width: 50%;
-    transform: translateX(-37%);
+    transform: translateX(-20%);
   }
   .list-box {
     width: 130%;
-    font-size: 1.7rem;
-    order: 2;
+    font-size: 1.2rem;
     transform: translateX(-6%);
-  }
-  .row {
-    justify-content: center;
-  }
-
-  .title-card-caroline {
-    font-size: 1.8rem;
-  }
-  .caroline-image {
-    width: 70%;
   }
   .wrapper-faq {
     margin: 0 auto;
     display: block;
-    width: 90%;
+    width: 60%;
   }
   .title-faq {
-    font-size: 1.9rem;
+    font-size: 2rem;
+    transform: translateY(40%);
+  }
+  .accordion {
+    transform: translateY(18%);
   }
   .accordion-button,
   .accordion {
-    font-size: 1.9rem;
-  }
-
-  .img-illustration-3 {
-    width: 60%;
-    margin: 0 auto;
-    display: block;
-  }
-  .background-form {
-    height: 100vh;
-  }
-  #btn-form {
-    width: 15rem;
     font-size: 1.4rem;
-    transform: translateY(-60%);
   }
   .wrapper-text-paragraph-course-details {
     margin: 0 auto;
+    transform: translateY(10%);
+  }
+  .wrapper-descuentos-beneficios {
+    width: 100%;
+    transform: translate(1%, 30%);
   }
   .paragraph-course-details {
     width: 120%;
@@ -472,6 +854,36 @@ footer {
   }
   .title-testimonials {
     font-size: 1.3rem;
+  }
+
+  /* ..... botones llamado a la accion ..... */
+  .wrapper-cta-1 {
+    transform: translateY(-9%);
+  }
+
+  .wrapper-cta-1 {
+    width: 40%;
+  }
+
+  .wrapper-cta-2 {
+    transform: translate(-15%, 130%);
+  }
+
+  .wrapper-cta-2 {
+    width: 30%;
+  }
+
+  /* formulario */
+  .background-form {
+    height: 109vh;
+  }
+  #btn-form {
+    transform: translateY(-60%);
+  }
+
+  /* ..... sector testimonios ..... */
+  .block-five {
+    height: 96vh;
   }
   .testimonials {
     transform: translateY(-10%);
@@ -485,13 +897,18 @@ footer {
     font-size: 1rem;
   }
   .carousel-indicators {
-    transform: translateY(180%);
+    transform: translateY(195%);
   }
   .wrapper-icon {
-    transform: translateY(60%);
+    transform: translateY(160%);
+  }
+
+  /* ..... configuracion footer ..... */
+  footer {
+    height: 30vh;
   }
   i {
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     cursor: pointer;
   }
   .copy-sada {
@@ -501,6 +918,211 @@ footer {
   }
 }
 
-/* -------------------------------- */
-@media (max-width: 1400px) {
+/* ----- MEDIA QUERIES 1400px ----- */
+@media (min-width: 1400px) {
+  .block-two {
+    height: 150vh;
+  }
+  /* imagenes */
+  .logo-sada {
+    width: 12%;
+  }
+  .img-illustration-1 {
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-7%, -7%);
+  }
+  .img-illustration-2 {
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+    transform: translate(-30%, -2%);
+  }
+  .img-illustration-3 {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* ..... configuracion card-caroline ..... */
+  .wrapper-caroline {
+    margin: 0 auto;
+    width: 40%;
+    transform: translate(2%, 6%);
+  }
+  .container-card-caroline {
+    height: 130vh;
+  }
+
+  #title-card-caroline {
+    font-size: 2rem;
+    transform: translateY(40%);
+  }
+  .card-title {
+    font-size: 1.8rem;
+    transform: translateY(120%);
+  }
+
+  .caroline-image {
+    transform: translateY(15%);
+  }
+  .card-text {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2;
+    margin: 0 auto;
+    transform: translateY(30%);
+  }
+
+  /* textos */
+  .text-container {
+    width: 100%;
+    text-align: start;
+  }
+  .title-hero {
+    font-size: 3.4rem;
+  }
+  .paragraph-necesitas {
+    font-size: 1.9rem;
+    line-height: 1.6;
+    transform: translateY(3%);
+  }
+  .paragraph-curso-online {
+    font-size: 1.5rem;
+    transform: translateY(40%);
+  }
+  .paragraph-inscribete {
+    font-size: 1rem;
+    transform: translateY(30%);
+  }
+  .title-aprenderas {
+    transform: translate(-25%, 90%);
+    font-size: 2.1rem;
+  }
+  .text-content-box {
+    width: 50%;
+    transform: translateX(-20%);
+  }
+  .list-box {
+    width: 130%;
+    font-size: 1.7rem;
+    transform: translateX(-6%);
+  }
+  .wrapper-faq {
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+  }
+  .title-faq {
+    font-size: 2rem;
+    transform: translateY(40%);
+  }
+  .accordion {
+    transform: translateY(8%);
+  }
+  .accordion-button,
+  .accordion {
+    line-height: 2.7;
+    font-size: 1.7rem;
+  }
+  .wrapper-text-paragraph-course-details {
+    margin: 0 auto;
+    transform: translateY(10%);
+  }
+  .wrapper-descuentos-beneficios {
+    width: 90%;
+    transform: translate(1%, 30%);
+  }
+  .paragraph-course-details {
+    width: 120%;
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 2;
+    transform: translateX(-10%);
+  }
+  .descuentos,
+  .beneficios {
+    width: 50%;
+    font-size: 1.5rem;
+    padding: 25px;
+    transform: translateX(10%);
+  }
+
+  .form-label,
+  .invalid-feedback,
+  .form-control,
+  .form-check-label,
+  .text-reembolso {
+    font-size: 1.7rem;
+  }
+  .text-reembolso {
+    transform: translateY(130%);
+  }
+  /* ..... botones llamado a la accion ..... */
+  .cta-1 {
+    width: 110%;
+    font-size: 1.4rem;
+    transform: translateY(50%);
+  }
+  .cta-2 {
+    width: 140%;
+    font-size: 1.7rem;
+    transform: translate(-20%, 50%);
+  }
+
+  /* formulario */
+  .background-form {
+    height: 140vh;
+  }
+  #btn-form {
+    width: 40%;
+    font-size: 2rem;
+    transform: translateY(-3%);
+  }
+
+  /* ..... sector testimonios ..... */
+  .block-five {
+    height: 140vh;
+  }
+  .title-testimonials {
+    font-size: 1.9rem;
+    transform: translateY(20%);
+  }
+  .testimonials {
+    transform: translateY(10%);
+  }
+  .image-testimonials {
+    width: 40%;
+  }
+  .title-name {
+    font-size: 1.7rem;
+  }
+
+  .text-testimonials {
+    width: 80%;
+    height: 25vh;
+    margin: 0 auto;
+    font-size: 1.6rem;
+  }
+  .carousel-indicators {
+    transform: translateY(295%);
+  }
+  .wrapper-icon {
+    transform: translateY(160%);
+  }
+
+  /* ..... configuracion footer ..... */
+  footer {
+    height: 30vh;
+  }
+  i {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .copy-sada {
+    text-align: center;
+    font-size: 1.7rem;
+    transform: translateY(110%);
+  }
 }
