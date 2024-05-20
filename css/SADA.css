@@ -29,24 +29,25 @@ header {
 }
 footer {
   background-color: #510539;
-  height: 40vh;
   color: var(--text-color);
 }
 
 /* ..... CONFIGURACION DE LAS IMAGENES ..... */
-.logo-sada {
-  width: 10%;
+ .logo-sada {
+  width: 25%;
   padding: 1.2rem;
+  margin: 0 auto;
+
 }
-.img-illustration-1 {
+/*.img-illustration-1 {
   max-width: 100%;
 }
 .img-illustration-2 {
   max-width: 80%;
-}
-.caroline-image {
+} */
+/* .caroline-image {
   width: 70%;
-}
+} */
 
 .image-testimonials {
   margin: 0 auto;
@@ -72,9 +73,9 @@ footer {
 .beneficios {
   color: var(--text-color);
 }
-.text-testimonials {
+/* .text-testimonials {
   font-size: 0.7rem;
-}
+} */
 
 /* .......... BOTONES LLAMADO A LA ACCION ........... */
 .cta-1,
@@ -136,7 +137,7 @@ footer {
 
 /* iconos del carousel */
 .carousel-indicators {
-  transform: translateY(100%);
+  /* transform: translateY(100%); */
   width: 20%;
 }
 .carousel-indicators [data-bs-target] {
@@ -147,19 +148,19 @@ footer {
 .background-form {
   background-color: #510539;
 }
-.img-form {
+/* .img-form {
   width: 20%;
-}
+} */
 #btn-form {
   background-color: #a501b4;
-  width: 9rem;
-  font-size: 1rem;
+  /* width: 9rem;
+  font-size: 1rem; */
   color: #fcff4a;
 }
 #btn-form:hover {
   background-color: #d32ee2;
-  width: 9rem;
-  font-size: 1rem;
+  /* width: 9rem;
+  font-size: 1rem; */
   color: #fcff4a;
 }
 .form-label {
@@ -169,13 +170,34 @@ footer {
 /* -------- MEDIA QUERIES -------- */
 
 /* ----- MEDIA QUERIES 360px ----- */
-@media (min-width: 360px) {
-  .block-four {
-    height: 70vh;
-  }
-  /* imagenes */
+@media (min-width: 320px) {
   .logo-sada {
-    width: 33%;
+    width: 30%;
+  }
+  .wrapper-img-illustration-2{
+    width: 70%;
+  }
+  /* textos-header */
+.text-container{
+  text-align: center;
+}
+.img-illustration-3{
+  width: 70%;
+}
+.caroline-image{
+  width: 70%;
+}
+.image-testimonials{
+  width: 50%;
+}
+}
+@media (min-width: 360px) {}
+  /* .block-four {
+    height: 70vh;
+  } */
+  /* imagenes */
+  /* .logo-sada {
+    width: 30%;
     transform: translateY(-10%);
   }
   .img-illustration-1 {
@@ -194,19 +216,19 @@ footer {
     width: 60%;
     margin: 0 auto;
     display: block;
-  }
+  } */
 
   /* ..... configuracion card-caroline */
-  .wrapper-caroline {
+  /* .wrapper-caroline {
     width: 90%;
-    margin: 0 auto;
+    margin: 0 auto; */
     /* transform: translateY(2%); */
-  }
-  .container-card-caroline {
-    height: 450px;
+  /* } */
+  /* .container-card-caroline {
+    height: 450px; */
     /* transform: translateY(-6.2%); */
-  }
-  #title-card-caroline {
+  /* } */
+  /* #title-card-caroline {
     font-size: 1.2rem;
   }
   .caroline-image {
@@ -214,15 +236,15 @@ footer {
   }
   .card-title {
     font-size: 1.1rem;
-  }
-  .card-text {
+  } */
+  /* .card-text { */
     /* width: 100%; */
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
     /* margin: 0 auto; */
-  }
+  /* } */
 
   /* textos */
-  .text-container {
+  /* .text-container {
     text-align: center;
   }
   .title-hero {
@@ -303,10 +325,10 @@ footer {
   .title-testimonials {
     font-size: 1rem;
     line-height: 2;
-  }
+  } */
 
   /*  botones llamado a la accion */
-  .wrapper-cta-1 {
+  /* .wrapper-cta-1 {
     transform: translate(20%, -4%);
   }
   .wrapper-cta-1 {
@@ -322,11 +344,11 @@ footer {
     font-size: 0.9rem;
     margin: 0 auto;
     display: block;
-  }
+  } */
 
   /* formulario */
-  .background-form {
-    height: 95vh;
+  /* .background-form {
+    height: 40vh;
   }
   #btn-form {
     transform: translateY(-60%);
@@ -335,7 +357,7 @@ footer {
     font-size: 0.9rem;
   }
 
-  /* sector testimonios */
+  /* sector testimonios 
   .testimonials {
     transform: translateY(-10%);
   }
@@ -355,10 +377,10 @@ footer {
   }
   .wrapper-icon {
     transform: translateY(60%);
-  }
+  }*/
 
   /* configuracion footer */
-  footer {
+  /* footer {
     height: 25vh;
   }
   i {
@@ -372,35 +394,35 @@ footer {
     font-size: 0.8rem;
     margin: 0 auto;
     transform: translateY(-1%);
-  }
-}
+  } 
+}*/
 
 /* ----- MEDIA QUERIES 576px ----- */
 @media (min-width: 576px) {
-  .block-four {
-    height: 103vh;
-  }
+  /* .block-four {
+    height: 45vh;
+  } */
   /* imagenes */
-  .logo-sada {
+  /* .logo-sada {
     width: 19%;
   }
   .img-illustration-1 {
     width: 80%;
     transform: translateY(-7%);
   }
-  .img-illustration-2 {
+  .wrapper-img-illustration-2 {
     width: 60%;
-    /* */
-    transform: translateY(20%);
-  }
+    /* 
+ margin: 0 auto;*/
+  /* }
   .img-illustration-3 {
     width: 50%;
     margin: 0 auto;
     display: block;
-  }
+  }  */
 
   /* ..... configuracion card-caroline ..... */
-  .wrapper-caroline {
+  /* .wrapper-caroline {
     margin: 0 auto;
     width: 80%;
     transform: translateY(2%);
@@ -420,10 +442,10 @@ footer {
     width: 100%;
     font-size: 1rem;
     margin: 0 auto;
-  }
+  } */
 
   /* textos */
-  .title-hero {
+  /* .title-hero {
     font-size: 2rem;
   }
   .paragraph-necesitas {
@@ -447,9 +469,9 @@ footer {
     width: 70%;
   }
   .list-box {
-    width: 150%;
+  margin: 0 auto;
     font-size: 1.3rem;
-    transform: translate(-18%, 8%);
+   
   }
   .wrapper-faq {
     margin: 0 auto;
@@ -484,10 +506,10 @@ footer {
   .descuentos,
   .beneficios {
     font-size: 1rem;
-  }
+  } */
 
   /* ..... botones llamado a la accion ..... */
-  .wrapper-cta-1 {
+  /* .wrapper-cta-1 {
     transform: translate(33%, 10%);
   }
 
@@ -501,18 +523,18 @@ footer {
 
   .wrapper-cta-2 {
     width: 30%;
-  }
+  } */
 
   /* formulario */
-  .background-form {
+  /* .background-form {
     height: 117vh;
   }
   #btn-form {
     transform: translateY(-60%);
-  }
+  } */
 
   /* ..... sector testimonios ..... */
-  .block-five {
+  /* .block-five {
     height: 120vh;
   }
   .testimonials {
@@ -542,10 +564,10 @@ footer {
   }
   .wrapper-icon {
     transform: translateY(160%);
-  }
+  } */
 
   /* ..... configuracion footer ..... */
-  footer {
+  /* footer {
     height: 40vh;
   }
   i {
@@ -557,19 +579,19 @@ footer {
     text-align: center;
     font-size: 1rem;
     transform: translateY(120%);
-  }
+  } */
 }
 
 /* ----- MEDIA QUERIES 992px ----- */
 @media (min-width: 992px) {
-  header {
-    height: 190vh;
+  /* header {
+    height: 75vh;
   }
   .block-one {
-    height: 155vh;
+    height: 60vh;
   }
   /* imagenes */
-  .logo-sada {
+  /* .logo-sada {
     width: 14%;
   }
   .img-illustration-1 {
@@ -588,16 +610,16 @@ footer {
     width: 50%;
     margin: 0 auto;
     display: block;
-  }
+  } */ 
 
   /* ..... configuracion card-caroline ..... */
-  .wrapper-caroline {
+  /* .wrapper-caroline {
     margin: 0 auto;
     width: 40%;
     transform: translateY(2%);
   }
   .container-card-caroline {
-    height: 102vh;
+    height: 40vh;
     transform: translateY(-6.2%);
   }
 
@@ -611,10 +633,10 @@ footer {
     width: 100%;
     font-size: 1rem;
     margin: 0 auto;
-  }
+  } */
 
   /* textos */
-  .text-container {
+  /* .text-container {
     text-align: center;
   }
   .title-hero {
@@ -674,10 +696,10 @@ footer {
     line-height: 2;
     text-align: center;
     transform: translateX(-10%);
-  }
+  } */
 
   /* ..... botones llamado a la accion ..... */
-  .wrapper-cta-1 {
+  /* .wrapper-cta-1 {
     transform: translateY(-9%);
   }
 
@@ -692,19 +714,19 @@ footer {
 
   .wrapper-cta-2 {
     width: 30%;
-  }
+  } */
 
   /* formulario */
-  .background-form {
-    height: 115vh;
+  /* .background-form {
+    height: 45vh;
   }
   #btn-form {
     transform: translateY(-60%);
-  }
+  } */
 
   /* ..... sector testimonios ..... */
-  .block-five {
-    height: 103vh;
+  /* .block-five {
+    height: 40vh;
   }
   .testimonials {
     transform: translateY(-10%);
@@ -721,14 +743,14 @@ footer {
     font-size: 1rem;
   }
   .carousel-indicators {
-    transform: translateY(195%);
+    transform: translateY(10%);
   }
   .wrapper-icon {
     transform: translateY(160%);
-  }
+  } */
 
   /* ..... configuracion footer ..... */
-  footer {
+  /* footer {
     height: 30vh;
   }
   i {
@@ -739,14 +761,14 @@ footer {
     text-align: center;
     font-size: 1rem;
     transform: translateY(160%);
-  }
+  } */
 
 }
 
 /* ----- MEDIA QUERIES 1200px ----- */
 @media (min-width: 1200px) {
   /* imagenes */
-  .logo-sada {
+  /* .logo-sada {
     width: 10%;
   }
   .img-illustration-1 {
@@ -765,16 +787,16 @@ footer {
     width: 50%;
     margin: 0 auto;
     display: block;
-  }
+  } */
 
   /* ..... configuracion card-caroline ..... */
-  .wrapper-caroline {
+  /* .wrapper-caroline {
     margin: 0 auto;
     width: 40%;
     transform: translateY(2%);
   }
   .container-card-caroline {
-    height: 95vh;
+    height: 90vh;
     transform: translateY(-6.2%);
   }
 
@@ -791,7 +813,7 @@ footer {
   }
 
   /* textos */
-  .text-container {
+  /* .text-container {
     text-align: start;
   }
   .title-hero {
@@ -854,10 +876,10 @@ footer {
   }
   .title-testimonials {
     font-size: 1.3rem;
-  }
+  } */ 
 
   /* ..... botones llamado a la accion ..... */
-  .wrapper-cta-1 {
+  /* .wrapper-cta-1 {
     transform: translateY(-9%);
   }
 
@@ -874,15 +896,15 @@ footer {
   }
 
   /* formulario */
-  .background-form {
+  /* .background-form {
     height: 109vh;
   }
   #btn-form {
     transform: translateY(-60%);
-  }
+  }  */
 
   /* ..... sector testimonios ..... */
-  .block-five {
+  /* .block-five {
     height: 96vh;
   }
   .testimonials {
@@ -901,10 +923,10 @@ footer {
   }
   .wrapper-icon {
     transform: translateY(160%);
-  }
+  } */
 
   /* ..... configuracion footer ..... */
-  footer {
+  /* footer {
     height: 30vh;
   }
   i {
@@ -915,16 +937,16 @@ footer {
     text-align: center;
     font-size: 1rem;
     transform: translateY(160%);
-  }
+  } */
 }
 
 /* ----- MEDIA QUERIES 1400px ----- */
 @media (min-width: 1400px) {
-  .block-two {
+  /* .block-two {
     height: 150vh;
-  }
+  } */
   /* imagenes */
-  .logo-sada {
+  /* .logo-sada {
     width: 12%;
   }
   .img-illustration-1 {
@@ -943,10 +965,10 @@ footer {
     width: 50%;
     margin: 0 auto;
     display: block;
-  }
+  } */
 
   /* ..... configuracion card-caroline ..... */
-  .wrapper-caroline {
+  /* .wrapper-caroline {
     margin: 0 auto;
     width: 40%;
     transform: translate(2%, 6%);
@@ -973,10 +995,10 @@ footer {
     line-height: 2;
     margin: 0 auto;
     transform: translateY(30%);
-  }
+  } */
 
   /* textos */
-  .text-container {
+  /* .text-container {
     width: 100%;
     text-align: start;
   }
@@ -1058,9 +1080,9 @@ footer {
   }
   .text-reembolso {
     transform: translateY(130%);
-  }
+  } */
   /* ..... botones llamado a la accion ..... */
-  .cta-1 {
+  /* .cta-1 {
     width: 110%;
     font-size: 1.4rem;
     transform: translateY(50%);
@@ -1069,20 +1091,20 @@ footer {
     width: 140%;
     font-size: 1.7rem;
     transform: translate(-20%, 50%);
-  }
+  } */
 
   /* formulario */
-  .background-form {
+  /* .background-form {
     height: 140vh;
   }
   #btn-form {
     width: 40%;
     font-size: 2rem;
     transform: translateY(-3%);
-  }
+  } */
 
   /* ..... sector testimonios ..... */
-  .block-five {
+  /* .block-five {
     height: 140vh;
   }
   .title-testimonials {
@@ -1110,10 +1132,10 @@ footer {
   }
   .wrapper-icon {
     transform: translateY(160%);
-  }
+  } */
 
   /* ..... configuracion footer ..... */
-  footer {
+  /* footer {
     height: 30vh;
   }
   i {
@@ -1124,5 +1146,5 @@ footer {
     text-align: center;
     font-size: 1.7rem;
     transform: translateY(110%);
-  }
+  } */
 }

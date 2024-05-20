@@ -17,18 +17,20 @@
 <body>
   <main>
     <!-- ****************** BLOCK- HEADER ********************** -->
-    <header>
-      <div class="nav-logo container-fluid text-center py-3">
-        <a href="#">
+    <header class="container-fluid" >
+      <div class="nav-logo row py-3">
+        <div class="wrapper-logo text-center">
+        <a href="#" class=" col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
           <img class="logo-sada img-fluid" src="./img/Recurso-logo-sada.svg" alt="logo-sada">
         </a>
+      </div>
       </div>
 
       <div class="container">
         <div class="row ">
           <!-- .................... inicio columna 1 header .................... -->
           <div class="mx-auto col-sm-12 col-md-7 col-lg- col-xl-6 col-xxl-6">
-            <div class="text-container mb-5">
+            <div class="text-container">
               <h1 class="title-hero h1 text-capitalize">Domina las Finanzas de tu
                 Emprendimiento
               </h1>
@@ -52,7 +54,7 @@
 
           <!-- .................... inicio columna 2 header .................... -->
           <div class="mx-auto col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6">
-            <div class="image-container">
+            <div class="image-container py-5">
               <img src="./img/illustration1.svg" alt="ilustracion svg" class="img-illustration-1 img-fluid">
             </div>
           </div>
@@ -66,14 +68,17 @@
       <div class="container">
         <div class="row">
           <!-- .................... inicio columna 1 block-one  .................... -->
-          <div class="wrapper-img-illustration-2 align-self-center col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
-            <img src="./img/illustration2.svg" alt="illustration2" class="img-illustration-2 img-fluid">
+          <div class="wrapper-img-illustration-2 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto ">
+            <img src="./img/illustration2.svg" alt="illustration2" class="img-illustration-2 img-fluid py-5 ">
           </div>
           <!-- .................... fin columna 1 block-one  .................... -->
 
           <!-- .................... inicio columna 2 block-one  .................... -->
-          <div class="text-content-box col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 align-self-center py-3">
-            <h2 class="title-aprenderas h4 text-center">Qué aprenderás?</h2>
+          <div class="text-content-box col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 py-3">
+            
+            <div class="wrapper-title-aprenderas">
+              <h2 class="title-aprenderas h4 text-center">Qué aprenderás?</h2>
+            </div>
             <ul class="list-box lh-lg h5 py-5 mx-5">
               <li class="list-block-two">Principios básicos de contabilidad y finanzas.</li>
               <li class="list-block-two">Cómo crear y gestionar un presupuesto efectivo.</li>
@@ -94,7 +99,7 @@
 
     <!-- ****************** BLOCK-TWO ********************** -->
     <section class="block-two">
-      <div class="box-block-two container">
+      <div class="box-block-two container py-5">
         <div class="row">
           <!-- .................... inicio columna 1 block-two  .................... -->
           <div class="wrapper-faq col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
@@ -184,7 +189,7 @@
               </div>
 
             </div> <!--🎇 fin grupo acordion -->
-            <div class="wrapper-cta-2 py-3">
+            <div class="wrapper-cta-2 text-center py-4">
               <a class="cta-2 py-2 btn text-uppercase" href="#box-form">Quiero Inscribirme</a>
             </div>
             <!-- ...................boton llamado a la accion .................. -->
@@ -193,10 +198,11 @@
           <!-- .................... fin columna 1 block-two  .................... -->
 
           <!-- .................... inicio columna 2 block-two  .................... -->
-          <div class="wrapper-caroline col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-5">
+          <div class="wrapper-caroline col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-4">
 
-            <div class="container-card-caroline card text-center ">
+            <div class="container-card-caroline card text-center py-3 ">
               <h3 id="title-card-caroline" class="py-3 text-center">Quién te acompañará?</h3>
+              
               <img src="./img/img-Caroline-Sada-unsplash-.jpg" class="caroline-image img-fluid rounded-circle mx-auto "
                 alt="caroline Sada">
               <div class="content-text card-body">
@@ -221,8 +227,8 @@
       <div class="container">
         <div class="row justify-content-center">
           <!-- .................... inicio columna 1 block-three  .................... -->
-          <div class="col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 py-4 was-validated">
-            <img src="./img/illustration3.svg" alt="illustration 3" class="img-illustration-3 img-fluid">
+          <div class="text-center col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8 py-4 was-validated">
+            <img src="./img/illustration3.svg" alt="illustration 3" class="img-illustration-3 py-4 img-fluid ">
             <form action="php" class="background-form was-validated text-start mx-auto p-3" id="box-form">
 
               <label for="name" class="form-label">nombre:</label>
@@ -259,11 +265,11 @@
               </div>
 
               <div class="text-center">
-                <button id="btn-form" type="submit" class="btn btn-lg mt-5">
+                <button id="btn-form" type="submit" class="btn btn-lg py-1">
                   ENVIAR</button><br>
-                <h5 class="text-reembolso text-center mx-auto fw-lighter mt-1">
+                <h4 class="text-reembolso text-center mx-auto fw-lighter py-3 mt-2 h6">
                   Garantía de reembolso de 30 días
-                </h5>
+                </h4>
               </div>
             </form>
           </div>
@@ -276,8 +282,7 @@
     <section class="block-four">
       <div class="container">
         <div class="row">
-          <div
-            class="wrapper-text-paragraph-course-details text-center col-sm-12 col-md-7 col-lg-6 col-xl-6 col-xxl-6 py-3 ">
+          <div class="wrapper-text-paragraph-course-details col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-3 mx-auto text-center">
 
             <p class="paragraph-course-details h6 fw-semibold">
               Inscríbete hoy mismo por $10.000 y asegura tu lugar en el curso.
@@ -290,7 +295,7 @@
           <div class="container-fluid">
             <div class="wrapper-descuentos-beneficios row">
 
-              <div class="descuentos col-sm-7 col-md-7 col-lg-6 col-xl-6 col-xxl-6 py-5">
+              <div class="descuentos col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-3">
                 <ul>
                   <li class="li-descuentos lh-m fw-normal">
                     <span class="fw-semibold">Descuentos Especiales:</span><br>Obtén descuentos
@@ -301,7 +306,7 @@
                 </ul>
               </div>
 
-              <div class="beneficios col-sm-7 col-md-7 col-lg-6 col-xl-6 col-xxl-6 py-5">
+              <div class="beneficios col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 py-3">
                 <ul>
                   <li class="li-descuentos lh-m fw-normal">
                     <span class="fw-semibold">Beneficios adicionales:</span><br>Tendrás acceso a sesiones en vivo con
@@ -324,11 +329,11 @@
 
       <div class="container">
         <div class="row justify-content-center">
-          <h3 class="title-testimonials h5 text-center py-5">"El éxito financiero de otros emprendedores te está
-            esperando. <br>¡Inspírate con sus historias!"</h3>
+          <h5 class="title-testimonials h6 text-center py-3">"El éxito financiero de otros emprendedores te está
+            esperando. <br>¡Inspírate con sus historias!"</h5>
           <div class="testimonials col-sm-12 col-md-8 col-lg-8 col-xl-8 col-xxl-8">
 
-            <div id="carouselExampleCaptions" class="carousel slide">
+            <div id="carouselExampleCaptions" class="carousel slide py-4">
 
               <div class="carousel-indicators mx-auto">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -347,7 +352,7 @@
                   <div class="carousel-caption d-none d-md-block">
 
                   </div>
-                  <h4 class="title-name text-center">Facundo</h4>
+                  <h6 class="title-name text-center py-1">Facundo</h6>
                   <p class="text-testimonials text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                     tempora
                     soluta quod labore impedit libero incidunt voluptas unde iure voluptatem!</p>
@@ -359,7 +364,7 @@
                   <div class="carousel-caption d-none d-md-block">
 
                   </div>
-                  <h4 class="title-name text-center">Cristina</h4>
+                  <h6 class="title-name text-center py-1">Cristina</h6>
                   <p class="text-testimonials text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                     tempora
                     soluta quod labore impedit libero incidunt voluptas unde iure voluptatem!</p>
@@ -371,7 +376,7 @@
                   <div class="carousel-caption d-none d-md-block">
 
                   </div>
-                  <h4 class="title-name text-center">Miguel</h4>
+                  <h6 class="title-name text-center py-1">Miguel</h6>
                   <p class="text-testimonials text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
                     tempora
                     soluta quod labore impedit libero incidunt voluptas unde iure voluptatem!</p>
@@ -400,18 +405,18 @@
   </main>
 
   <!-- ******************** FOOTER ************************* -->
-  <footer class="w-100">
+  <footer class="py-5">
     <div class="container">
       <div class="row ">
-        <div class="wrapper-icon col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center mx-auto mt-4 ">
+        <div class="wrapper-icon col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text-center mx-auto mt-1 py-3">
           <i class="fs-6-sm fa-brands fa-facebook"> &nbsp;</i>
           <i class="fs-6-sm fa-brands fa-x-twitter"> &nbsp;</i>
           <i class="fs-6-sm fa-brands fa-tiktok"> &nbsp;</i>
           <i class="fs-6-sm fa-brands fa-instagram"> &nbsp;</i>
-          <i class="fs-6-sm fa-brands fa-youtube"> &nbsp;</i><br><br>
+          <i class="fs-6-sm fa-brands fa-youtube"> &nbsp;</i>
         </div>
 
-        <p class="copy-sada">© copyright 2024 -sada.com todos los derechos reservados.</p>
+        <p class="copy-sada text-center">© copyright 2024 -sada.com todos los derechos reservados.</p>
       </div>
     </div>
   </footer>
