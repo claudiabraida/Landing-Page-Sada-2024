@@ -133,7 +133,7 @@ footer {
   width: 20%;
 }
 .carousel-indicators [data-bs-target] {
-  background-color: rgb(243, 98, 224);
+  background-color: #f362e0;
 }
 
 /* ..... FORMULARIO ..... */
@@ -192,15 +192,8 @@ footer {
   }
   
    /* configuracion formulario */
-   .background-form{
-    width: 80%;
-   }
-  #btn-form {
-    width: 30%;
-    font-size: 0.8rem;
-  }
   .form-check-label{
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -237,7 +230,8 @@ footer {
   .paragraph-necesitas {
     margin-top: 7%;
   }
-  .title-faq,  .wrapper-cta-2{
+  .title-faq, 
+  .wrapper-cta-2{
     text-align: center;
   }
   .accordion-button,
@@ -326,10 +320,7 @@ footer {
   .title-hero {
     font-size: 3rem;
   }
-  /* .h4 {
-    font-size: 993rem;
-    transform: translate(-25%, 28%);
-  } */
+
   .paragraph-necesitas {
     font-size: 1.6rem;
     margin-top: 10%;
