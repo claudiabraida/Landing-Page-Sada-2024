@@ -156,7 +156,7 @@ footer {
 /* -------- MEDIA QUERIES -------- */
 
 /* ----- MEDIA QUERIES 360px ----- */
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   /* imagenes */
   .logo-sada {
     width: 30%;
